@@ -5,7 +5,7 @@
 `include "vdp_lite_mprj_io.vh"
 
 module vdp_lite_user_proj #(
-    parameter [0:0] ENABLE_VRAM = 1
+    parameter [0:0] ENABLE_VRAM = 0
 ) (
     inout vdda1,	// User area 1 3.3V supply
     inout vdda2,	// User area 2 3.3V supply

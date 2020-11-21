@@ -1,4 +1,5 @@
 `default_nettype none
+
 /*
  *-------------------------------------------------------------
  *
@@ -62,7 +63,7 @@ module user_project_wrapper #(
     /* User project is instantiated  here   */
     /*--------------------------------------*/
 
-    user_proj_example mprj (
+    vdp_lite_user_proj mprj (
 	.vdda1(vdda1),	// User area 1 3.3V power
 	.vdda2(vdda2),	// User area 2 3.3V power
 	.vssa1(vssa1),	// User area 1 analog ground

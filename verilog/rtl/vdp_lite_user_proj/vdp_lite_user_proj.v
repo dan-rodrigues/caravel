@@ -2,10 +2,27 @@
 
 `default_nettype none
 
-`include "vdp_lite_mprj_io.vh"
+// `include "vdp_lite_mprj_io.vh"
+
+`define MGMT_RESERVED_WIDTH 12
+
+`define VIDEO_IO_BASE 12
+`define VIDEO_IO_WIDTH 18
+
+`define GAMEPAD_IO_BASE (12 + 18)
+`define GAMEPAD_IO_WIDTH 4
+
+`define GAMEPAD_OUTPUT_BASE (12 + 18 + 0)
+`define GAMEPAD_OUTPUT_WIDTH 2
+
+`define GAMEPAD_INPUT_BASE (12 + 18 + 2)
+`define GAMEPAD_INPUT_WIDTH 2
+
+`define LED_IO_BASE (12 + 18 + 2 + 2)
+`define LED_IO_WIDTH 4
 
 module vdp_lite_user_proj #(
-    parameter [0:0] ENABLE_VRAM = 0
+    parameter VRAM_TYPE = "MINIMAL"
 ) (
     inout vdda1,	// User area 1 3.3V supply
     inout vdda2,	// User area 2 3.3V supply
@@ -217,7 +234,13 @@ module vdp_lite_user_proj #(
     // --- ROM / RAM for tiles ---
 
     wire ram_selected = vram_address[10];
-    wire [15:0] vram_read_data_selected = ram_selected ? vram_read_data : vrom_read_data;
+    reg ram_selected_r;
+
+    always @(posedge clk) begin
+        ram_selected_r <= ram_selected;
+    end
+
+    wire [15:0] vram_read_data_selected = ram_selected_r ? vram_read_data : vrom_read_data;
 
     // ROM:
 
@@ -237,12 +260,12 @@ module vdp_lite_user_proj #(
     wire [15:0] vram_read_data;
 
     generate
-        if (ENABLE_VRAM) begin
+        if (VRAM_TYPE == "DFFRAM") begin
             wire [31:0] vram_write_data = {2{vram_write_data_collapsed}};
             wire [3:0] vram_we = {2{vram_we_odd, vram_we_even}} & {{2{vram_address[0]}}, {2{~vram_address[0]}}};
 
             wire [31:0] vram_read_data_32;
-            wire [15:0] vram_read_data =  vram_address[0] ? vram_read_data_32[31:16] : vram_read_data_32[15:0];
+            assign vram_read_data =  vram_address[0] ? vram_read_data_32[31:16] : vram_read_data_32[15:0];
 
             // 1KByte DFFRAM:
 
@@ -258,8 +281,26 @@ module vdp_lite_user_proj #(
                 .Do(vram_read_data_32),
                 .A(vram_address[7:0])
             );
-        end else begin
+        end else if (VRAM_TYPE == "MINIMAL") begin
+            wire [4:0] vram_split_address = {vram_address[7], vram_address[3:0]};
+
+            ffram #(
+                .ADDR_WIDTH(5),
+                .DATA_WIDTH(8)
+            ) vram [1:0] (
+                .clk(clk),
+                .addr0(vram_split_address),
+                .we0({vram_we_odd, vram_we_even}),
+                .wdata0(vram_write_data_collapsed),
+                .rdata0(vram_read_data)
+            );
+        end else if (VRAM_TYPE == "NONE") begin
             assign vram_read_data = 16'b0;
+        end else begin
+            initial begin
+                $display("VRAM_TYPE parameter not specified correctly");
+                $stop;
+            end
         end
     endgenerate
 

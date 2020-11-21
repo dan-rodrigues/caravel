@@ -26,8 +26,8 @@ set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_PERIOD) "39"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1200 1200"
-set ::env(PL_TARGET_DENSITY) 0.35
+set ::env(DIE_AREA) "0 0 1200 900"
+set ::env(PL_TARGET_DENSITY) 0.4
 
 set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10
 
@@ -45,5 +45,4 @@ set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10
 #set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
 
 #set ::env(FP_PDN_VPITCH) 50
-#set ::env(PDN_CFG) $script_dir/pdn.tcl
 

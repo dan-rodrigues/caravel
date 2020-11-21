@@ -2,6 +2,8 @@ PROJ := video_frame
 
 TB_SW_SOURCES += main.c
 
+WRITE_VCD := 1
+
 include ../core.mk
 
 # RGBS post processing to PNG

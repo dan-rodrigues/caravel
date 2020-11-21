@@ -52,6 +52,8 @@ static void sprite_reset_buffer(void);
 static void sprite_upload_buffer(void);
 static void sprite_putc(char c, uint16_t *x, uint16_t y);
 
+static void custom_tiles_init(void);
+
 void main() {
     gpio_init();
     println("GPIO inititalized");
@@ -68,6 +70,10 @@ void main() {
     // This also gives the sim something to render when raster counters start
     draw_circle_sprites(0);
     draw_greeting_sprites(0);
+
+    // Only used to test VRAM writing / reading
+//    custom_tiles_init();
+
     sprite_upload_buffer();
     
     // Allow VDP raster to start after initial config
@@ -245,4 +251,64 @@ static void sprite_upload_buffer() {
     }
     
     sprite_reset_buffer();
+}
+
+static void custom_tiles_init() {
+    static const uint32_t tiles0[] = {
+        0x12222221,
+        0x11222211,
+        0x11122111,
+        0x11122111,
+        0x11122111,
+        0x11222211,
+        0x12222221,
+        0x12222221,
+
+        0x10101010,
+        0x11222211,
+        0x11122111,
+        0x11122111,
+        0x11122111,
+        0x12222221,
+        0x11222211,
+        0x10101010
+    };
+
+    static const uint32_t tiles1[] = {
+        0x11111111,
+        0x22222222,
+        0x11111111,
+        0x22222222,
+        0x11111111,
+        0x22222222,
+        0x11111111,
+        0x22222222,
+
+        0x12222221,
+        0x11222211,
+        0x11122111,
+        0x11122111,
+        0x11122111,
+        0x11222211,
+        0x12222221,
+        0x12222221,
+    };
+
+    // VDP *must* start or else can't write VRAM
+    reg_mprj_slave = VDP_EXTRA_CTRL_ACTIVE;
+
+    const uint16_t vram_base = 0x80 * 32 / 2;
+    vdp_set_vram_increment(1);
+
+    vdp_seek_vram(vram_base);
+    vdp_write_vram_block((uint16_t *)tiles0, 0x10 * 2);
+    vdp_seek_vram(vram_base + 0x10 * 0x10);
+    vdp_write_vram_block((uint16_t *)tiles1, 0x10 * 2);
+
+    // Sprites:
+
+    sprite_init();
+
+    vdp_seek_sprite(0);
+    vdp_write_sprite_meta(8, 20 | SPRITE_16_TALL | SPRITE_16_WIDE, 0x80);
 }

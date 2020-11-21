@@ -1,0 +1,16 @@
+.DS_Store
+
+/video_frame.hex
+
+/*.vcd
+/*.vvp
+/*.vcd
+/*.gtkw
+
+/rgbs.log
+
+/*.png
+
+/dasm
+/*.elf
+

@@ -26,7 +26,7 @@ set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_PERIOD) "39"
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 2000 2000"
+set ::env(DIE_AREA) "0 0 1200 1200"
 set ::env(PL_TARGET_DENSITY) 0.35
 
 set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10

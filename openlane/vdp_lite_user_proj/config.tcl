@@ -33,17 +33,17 @@ set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10
 
 # Only for DFFRAM which is off by default:
 
-set ::env(VERILOG_FILES_BLACKBOX) "\
-	$script_dir/../../verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/DFFRAM.v"
+#set ::env(VERILOG_FILES_BLACKBOX) "\
+#	$script_dir/../../verilog/rtl/defines.v \
+#	$script_dir/../../verilog/rtl/DFFRAM.v"
 
-set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/DFFRAM.lef"
-set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/DFFRAM.gds"
+#set ::env(EXTRA_LEFS) "\
+#	$script_dir/../../lef/DFFRAM.lef"
+#set ::env(EXTRA_GDS_FILES) "\
+#	$script_dir/../../gds/DFFRAM.gds"
 
-set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
+#set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
 
-set ::env(FP_PDN_VPITCH) 50
-set ::env(PDN_CFG) $script_dir/pdn.tcl
+#set ::env(FP_PDN_VPITCH) 50
+#set ::env(PDN_CFG) $script_dir/pdn.tcl
 

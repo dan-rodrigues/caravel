@@ -1,3 +1,35 @@
+# vdp-lite (SKY130 shuttle)
+
+![vdp-lite animated GIF demo](demo.gif)
+
+This is a basic sprite generator that can be controlled using the PicoRV32 + WB interface of the Caravel SoC. It outputs 640x480@60Hz video with pixels doubled to 320x240. The sides of the screen are clipped by 64 pixels each to reduce the "FF RAM" address width to 8bits. If all goes well, OpenRAM could be used in future runs to relax some of these constraints, restore features etc.
+
+The sprites can have arbitrary screen positions and can select any glyph from the character ROM.
+
+It is a minimized variant of the VDP found in the [icestation-32](https://github.com/dan-rodrigues/icestation-32) project. The rest of the system is not included although minimal serial IO for gamepad reading is included. To fit the time / memory constraints, functionality has either been removed or simplified.
+
+The font included in the character ROM is the [Good Neighbours pixel font](https://opengameart.org/content/good-neighbors-pixel-font) by Clint Bellanger, which is public domain.
+
+## Tests
+
+Testbenches that instantiate the `caravel` SoC running tests software.
+
+* `video_frame`: Outputs a complete video frame using dumped RGBHV outputs, which is then converted using a Python script to a PNG.
+* `gamepad`: Exercises the gamepad serial IO and (tentative) LED outputs.
+
+A sample PNG from the `video_frame` is shown below. It takes a very long time to complete and can be manually cut short to show a partial frame. The black borders represent the front/backporches.
+
+![](verilog/dv/caravel/user_proj_example/vdp_lite/video_frame/screen_progress/complete.png)
+
+## TODO
+
+* Configured config.tcl files appropriately for DRC clean design.
+* SPDX license headers.
+* Extract this README.md section.
+* Extract project-specific contents to separate repo.
+
+The original contents of the README file follow:
+
 # CIIC Harness  
 
 A template SoC for Google SKY130 free shuttles. It is still WIP. The current SoC architecture is given below.

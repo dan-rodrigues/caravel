@@ -9,12 +9,10 @@ set ::env(CLOCK_TREE_SYNTH) 0
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 2700 3700"
-set ::env(PL_TARGET_DENSITY) 0.001
+set ::env(PL_TARGET_DENSITY) 0.95
 set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
 
-set ::env(GLB_RT_ALLOW_CONGESTION) 1
-set ::env(GLB_RT_ADJUSTMENT) 0
-set ::env(GLB_RT_TILES) 14
+set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \

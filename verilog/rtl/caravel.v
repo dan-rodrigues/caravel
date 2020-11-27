@@ -35,6 +35,7 @@
 `include "caravel_clocking.v"
 `include "mgmt_core.v"
 `include "mgmt_protect.v"
+`include "mgmt_protect_hv.v"
 `include "mprj_io.v"
 `include "chip_io.v"
 `include "user_id_programming.v"
@@ -293,12 +294,13 @@ module caravel (
     wire [7:0] spi_ro_config_core;
 
     // LA signals
-    wire [127:0] la_output_core;   // From CPU to MPRJ
-    wire [127:0] la_data_in_mprj;  // From CPU to MPRJ
+    wire [127:0] la_data_in_user;  // From CPU to MPRJ
+    wire [127:0] la_data_in_mprj;  // From MPRJ to CPU
     wire [127:0] la_data_out_mprj; // From CPU to MPRJ
-    wire [127:0] la_output_mprj;   // From MPRJ to CPU
-    wire [127:0] la_oen;           // LA output enable from CPU perspective (active-low) 
-	
+    wire [127:0] la_data_out_user; // From MPRJ to CPU
+    wire [127:0] la_oen_user;      // From CPU to MPRJ
+    wire [127:0] la_oen_mprj;	   // From CPU to MPRJ
+
     // WB MI A (User Project)
     wire mprj_cyc_o_core;
     wire mprj_stb_o_core;
@@ -386,9 +388,9 @@ module caravel (
         	.user_clk(caravel_clk2),
         	.core_rstn(caravel_rstn),
 		// Logic Analyzer 
-		.la_input(la_data_out_mprj),
-		.la_output(la_output_core),
-		.la_oen(la_oen),
+		.la_input(la_data_in_mprj),
+		.la_output(la_data_out_mprj),
+		.la_oen(la_oen_mprj),
 		// User Project IO Control
 		.mprj_vcc_pwrgood(mprj_vcc_pwrgood),
 		.mprj2_vcc_pwrgood(mprj2_vcc_pwrgood),
@@ -452,8 +454,12 @@ module caravel (
 		.mprj_sel_o_core(mprj_sel_o_core),
 		.mprj_adr_o_core(mprj_adr_o_core),
 		.mprj_dat_o_core(mprj_dat_o_core),
-		.la_output_core(la_output_core),
-		.la_oen(la_oen),
+		.la_data_out_core(la_data_out_user),
+		.la_data_out_mprj(la_data_out_mprj),
+		.la_data_in_core(la_data_in_user),
+		.la_data_in_mprj(la_data_in_mprj),
+		.la_oen_mprj(la_oen_mprj),
+		.la_oen_core(la_oen_user),
 
 		.user_clock(mprj_clock),
 		.user_clock2(mprj_clock2),
@@ -465,7 +471,6 @@ module caravel (
 		.mprj_sel_o_user(mprj_sel_o_user),
 		.mprj_adr_o_user(mprj_adr_o_user),
 		.mprj_dat_o_user(mprj_dat_o_user),
-		.la_data_in_mprj(la_data_in_mprj),
 		.user1_vcc_powergood(mprj_vcc_pwrgood),
 		.user2_vcc_powergood(mprj2_vcc_pwrgood),
 		.user1_vdd_powergood(mprj_vdd_pwrgood),
@@ -499,9 +504,9 @@ module caravel (
 	    	.wbs_ack_o(mprj_ack_i_core),
 		.wbs_dat_o(mprj_dat_i_core),
 		// Logic Analyzer
-		.la_data_in(la_data_in_mprj),
-		.la_data_out(la_data_out_mprj),
-		.la_oen (la_oen),
+		.la_data_in(la_data_in_user),
+		.la_data_out(la_data_out_user),
+		.la_oen(la_oen_user),
 		// IO Pads
 		.io_in (user_io_in),
     		.io_out(user_io_out),
@@ -617,16 +622,20 @@ module caravel (
     user_id_programming #(
 	.USER_PROJECT_ID(USER_PROJECT_ID)
     ) user_id_value (
+`ifdef USE_POWER_PINS
 	.vdd1v8(vccd),
 	.vss(vssd),
+`endif
 	.mask_rev(mask_rev)
     );
 
     // Power-on-reset circuit
     simple_por por (
+`ifdef USE_POWER_PINS
 		.vdd3v3(vddio),
 		.vdd1v8(vccd),
 		.vss(vssio),
+`endif
 		.porb_h(porb_h),
 		.porb_l(porb_l),
 		.por_l(por_l)

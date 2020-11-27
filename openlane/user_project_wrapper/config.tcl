@@ -14,8 +14,6 @@ set ::env(DIE_AREA) "0 0 2920 3520"
 set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
 set ::env(DIODE_INSERTION_STRATEGY) 0
 
-set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
-
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \
 	$script_dir/../../verilog/rtl/user_project_wrapper.v"

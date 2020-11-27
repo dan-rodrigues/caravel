@@ -2,6 +2,9 @@ set script_dir [file dirname [file normalize [info script]]]
 
 set ::env(DESIGN_NAME) vdp_lite_user_proj
 
+set ::env(DESIGN_IS_CORE) 0
+set ::env(FP_PDN_CORE_RING) 0
+
 set ::env(VERILOG_FILES) "\
     $script_dir/../../verilog/rtl/defines.v \
     $script_dir/../../verilog/rtl/user_project_wrapper.v \
@@ -43,8 +46,4 @@ set ::env(DIODE_INSERTION_STRATEGY) 1
 #	$script_dir/../../lef/DFFRAM.lef"
 #set ::env(EXTRA_GDS_FILES) "\
 #	$script_dir/../../gds/DFFRAM.gds"
-
-#set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro_placement.cfg
-
-#set ::env(FP_PDN_VPITCH) 50
 

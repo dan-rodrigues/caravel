@@ -31,9 +31,9 @@ set ::env(CLOCK_PERIOD) "39"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 1400 1100"
-set ::env(PL_TARGET_DENSITY) 0.2
+set ::env(PL_TARGET_DENSITY) 0.3
 
-set ::env(DIODE_INSERTION_STRATEGY) 1
+set ::env(DIODE_INSERTION_STRATEGY) 0
 
 # Extra options:
 

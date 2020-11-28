@@ -92,6 +92,7 @@ proc run_flow {args} {
 	run_lvs; # requires run_magic_spice_export
 
 	run_antenna_check
+	run_magic_antenna_check
 
 	generate_final_summary_report
 

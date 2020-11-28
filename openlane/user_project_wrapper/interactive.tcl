@@ -1,7 +1,7 @@
 package require openlane
 set script_dir [file dirname [file normalize [info script]]]
 
-prep -design $script_dir -tag user_project_wrapper_empty -overwrite
+prep -design $script_dir -tag user_project_wrapper -overwrite
 set save_path $script_dir/../..
 
 verilog_elaborate
@@ -10,19 +10,12 @@ init_floorplan
 
 place_io_ol
 
-add_macro_obs \
-	-defFile $::env(CURRENT_DEF) \
-	-lefFile $::env(MERGED_LEF_UNPADDED) \
-	-obstruction core_obs \
-	-placementX $::env(FP_IO_HLENGTH) \
-	-placementY $::env(FP_IO_VLENGTH) \
-	-sizeWidth [expr [lindex $::env(DIE_AREA) 2]-$::env(FP_IO_HLENGTH)*2] \
-	-sizeHeight [expr [lindex $::env(DIE_AREA) 3]-$::env(FP_IO_VLENGTH)*2] \
-	-fixed 1 \
-	-layerNames "met1 met2 met3 met4 met5"
+set ::env(FP_DEF_TEMPATE) $script_dir/../../def/user_project_wrapper_empty.def
 
-# After the obs?
-add_macro_placement mprj 1150 1700 N
+apply_def_template
+
+add_macro_placement mprj 800 800 N
+
 manual_macro_placement f
 
 set ::env(_SPACING) 1.6
@@ -45,35 +38,28 @@ foreach domain $power_domains {
 	gen_pdn
 
 	set ::env(_V_OFFSET) \
-		[expr $::env(_V_OFFSET) + 2*($::env(_WIDTH)+$::env(_SPACING))]
+	[expr $::env(_V_OFFSET) + 2*($::env(_WIDTH)+$::env(_SPACING))]
 	set ::env(_H_OFFSET) \
-		[expr $::env(_H_OFFSET) + 2*($::env(_WIDTH)+$::env(_SPACING))]
+	[expr $::env(_H_OFFSET) + 2*($::env(_WIDTH)+$::env(_SPACING))]
 	set ::env(_V_PDN_OFFSET) [expr $::env(_V_PDN_OFFSET)+6*$::env(_WIDTH)]
 	set ::env(_H_PDN_OFFSET) [expr $::env(_H_PDN_OFFSET)+6*$::env(_WIDTH)]
 }
 
-# making it "empty"
-remove_nets -input $::env(CURRENT_DEF)
-remove_components -input $::env(CURRENT_DEF)
+global_routing_or
+detailed_routing
 
 run_magic
+run_magic_spice_export
 
 save_views       -lef_path $::env(magic_result_file_tag).lef \
-                 -def_path $::env(CURRENT_DEF) \
+                 -def_path $::env(tritonRoute_result_file_tag).def \
                  -gds_path $::env(magic_result_file_tag).gds \
                  -mag_path $::env(magic_result_file_tag).mag \
                  -save_path $save_path \
                  -tag $::env(RUN_TAG)
 
-# produce "obstructed" LEF to be used for routing
-set gap 0.4
-set llx [expr [lindex $::env(DIE_AREA) 0]-$gap]
-set lly [expr [lindex $::env(DIE_AREA) 1]-$gap]
-set urx [expr [lindex $::env(DIE_AREA) 2]+$gap]
-set ury [expr [lindex $::env(DIE_AREA) 3]+$gap]
-exec python3 $::env(OPENLANE_ROOT)/scripts/rectify.py $llx $lly $urx $ury \
-	< $::env(magic_result_file_tag).lef \
-	| python3 $::env(OPENLANE_ROOT)/scripts/obs.py {*}$::env(DIE_AREA) \
-	> $::env(magic_result_file_tag).obstructed.lef
-file copy $::env(magic_result_file_tag).obstructed.lef $save_path/lef
+run_magic_drc
 
+run_lvs; # requires run_magic_spice_export
+
+run_antenna_check

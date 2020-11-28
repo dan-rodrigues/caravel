@@ -3,10 +3,10 @@
 
 === user_proj_example ===
 
-   Number of wires:                341
-   Number of wire bits:            960
-   Number of public wires:          27
-   Number of public wire bits:     646
+   Number of wires:                333
+   Number of wire bits:            952
+   Number of public wires:          19
+   Number of public wire bits:     638
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0

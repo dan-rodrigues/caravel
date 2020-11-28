@@ -1,109 +1,1193 @@
-OpenROAD 0.9.0 e582f2522b
+OpenROAD 0.9.0 d03ebfc244
 This program is licensed under the BSD-3 license. See the LICENSE file for details. 
 Components of this program may be licensed under more restrictive licenses which must be honored.
-Warning: /home/xrex/usr/devel/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib, line 31 default_operating_condition tt_025C_1v80 not found.
+Error: cannot open '/.openroad'.
+Warning: /Users/dan.rodrigues/hw/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib, line 31 default_operating_condition tt_025C_1v80 not found.
 Notice 0: Reading LEF file:  /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged_unpadded.lef
 Notice 0:     Created 13 technology layers
 Notice 0:     Created 25 technology vias
 Notice 0:     Created 438 library cells
 Notice 0: Finished LEF file:  /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/merged_unpadded.lef
 Notice 0: 
-Reading DEF file: /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/ioPlacer.def.macro_placement.def
+Reading DEF file: /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/pdn.def
 Notice 0: Design: user_project_wrapper
-Notice 0:     Created 613 pins.
+Notice 0:     Created 644 pins.
 Notice 0:     Created 1 components and 614 component-terminals.
-Notice 0:     Created 613 nets and 612 connections.
-Notice 0: Finished DEF file: /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/ioPlacer.def.macro_placement.def
+Notice 0:     Created 8 special nets and 0 connections.
+Notice 0:     Created 636 nets and 604 connections.
+Notice 0: Finished DEF file: /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/pdn.def
 [PARAMS] Min routing layer: 2
 [PARAMS] Max routing layer: 6
 [PARAMS] Global adjustment: 0
 [PARAMS] Unidirectional routing: 1
 [PARAMS] Grid origin: (-1, -1)
 [INFO] #DB Obstructions: 0
-[INFO] #DB Obstacles: 594
+[INFO] #DB Obstacles: 680
 [INFO] #DB Macros: 1
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vccd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vssd1 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vccd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vssd2 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vdda1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vssa1 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vdda2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
+[WARNING] Net vssa2 has wires outside die area
 [INFO] Found 0 clock nets
+[WARNING] Pin analog_io[0] is outside die area
+[WARNING] Pin analog_io[10] is outside die area
+[WARNING] Pin analog_io[11] is outside die area
+[WARNING] Pin analog_io[12] is outside die area
+[WARNING] Pin analog_io[13] is outside die area
+[WARNING] Pin analog_io[14] is outside die area
+[WARNING] Pin analog_io[15] is outside die area
+[WARNING] Pin analog_io[16] is outside die area
+[WARNING] Pin analog_io[17] is outside die area
+[WARNING] Pin analog_io[18] is outside die area
+[WARNING] Pin analog_io[19] is outside die area
+[WARNING] Pin analog_io[1] is outside die area
+[WARNING] Pin analog_io[20] is outside die area
+[WARNING] Pin analog_io[21] is outside die area
+[WARNING] Pin analog_io[22] is outside die area
+[WARNING] Pin analog_io[23] is outside die area
+[WARNING] Pin analog_io[24] is outside die area
+[WARNING] Pin analog_io[25] is outside die area
+[WARNING] Pin analog_io[26] is outside die area
+[WARNING] Pin analog_io[27] is outside die area
+[WARNING] Pin analog_io[28] is outside die area
+[WARNING] Pin analog_io[29] is outside die area
+[WARNING] Pin analog_io[2] is outside die area
+[WARNING] Pin analog_io[30] is outside die area
+[WARNING] Pin analog_io[3] is outside die area
+[WARNING] Pin analog_io[4] is outside die area
+[WARNING] Pin analog_io[5] is outside die area
+[WARNING] Pin analog_io[6] is outside die area
+[WARNING] Pin analog_io[7] is outside die area
+[WARNING] Pin analog_io[8] is outside die area
+[WARNING] Pin analog_io[9] is outside die area
+[WARNING] Pin io_in[0] is outside die area
+[WARNING] Pin io_in[10] is outside die area
+[WARNING] Pin io_in[11] is outside die area
+[WARNING] Pin io_in[12] is outside die area
+[WARNING] Pin io_in[13] is outside die area
+[WARNING] Pin io_in[14] is outside die area
+[WARNING] Pin io_in[15] is outside die area
+[WARNING] Pin io_in[16] is outside die area
+[WARNING] Pin io_in[17] is outside die area
+[WARNING] Pin io_in[18] is outside die area
+[WARNING] Pin io_in[19] is outside die area
+[WARNING] Pin io_in[1] is outside die area
+[WARNING] Pin io_in[20] is outside die area
+[WARNING] Pin io_in[21] is outside die area
+[WARNING] Pin io_in[22] is outside die area
+[WARNING] Pin io_in[23] is outside die area
+[WARNING] Pin io_in[24] is outside die area
+[WARNING] Pin io_in[25] is outside die area
+[WARNING] Pin io_in[26] is outside die area
+[WARNING] Pin io_in[27] is outside die area
+[WARNING] Pin io_in[28] is outside die area
+[WARNING] Pin io_in[29] is outside die area
+[WARNING] Pin io_in[2] is outside die area
+[WARNING] Pin io_in[30] is outside die area
+[WARNING] Pin io_in[31] is outside die area
+[WARNING] Pin io_in[32] is outside die area
+[WARNING] Pin io_in[33] is outside die area
+[WARNING] Pin io_in[34] is outside die area
+[WARNING] Pin io_in[35] is outside die area
+[WARNING] Pin io_in[36] is outside die area
+[WARNING] Pin io_in[37] is outside die area
+[WARNING] Pin io_in[3] is outside die area
+[WARNING] Pin io_in[4] is outside die area
+[WARNING] Pin io_in[5] is outside die area
+[WARNING] Pin io_in[6] is outside die area
+[WARNING] Pin io_in[7] is outside die area
+[WARNING] Pin io_in[8] is outside die area
+[WARNING] Pin io_in[9] is outside die area
+[WARNING] Pin io_oeb[0] is outside die area
+[WARNING] Pin io_oeb[10] is outside die area
+[WARNING] Pin io_oeb[11] is outside die area
+[WARNING] Pin io_oeb[12] is outside die area
+[WARNING] Pin io_oeb[13] is outside die area
+[WARNING] Pin io_oeb[14] is outside die area
+[WARNING] Pin io_oeb[15] is outside die area
+[WARNING] Pin io_oeb[16] is outside die area
+[WARNING] Pin io_oeb[17] is outside die area
+[WARNING] Pin io_oeb[18] is outside die area
+[WARNING] Pin io_oeb[19] is outside die area
+[WARNING] Pin io_oeb[1] is outside die area
+[WARNING] Pin io_oeb[20] is outside die area
+[WARNING] Pin io_oeb[21] is outside die area
+[WARNING] Pin io_oeb[22] is outside die area
+[WARNING] Pin io_oeb[23] is outside die area
+[WARNING] Pin io_oeb[24] is outside die area
+[WARNING] Pin io_oeb[25] is outside die area
+[WARNING] Pin io_oeb[26] is outside die area
+[WARNING] Pin io_oeb[27] is outside die area
+[WARNING] Pin io_oeb[28] is outside die area
+[WARNING] Pin io_oeb[29] is outside die area
+[WARNING] Pin io_oeb[2] is outside die area
+[WARNING] Pin io_oeb[30] is outside die area
+[WARNING] Pin io_oeb[31] is outside die area
+[WARNING] Pin io_oeb[32] is outside die area
+[WARNING] Pin io_oeb[33] is outside die area
+[WARNING] Pin io_oeb[34] is outside die area
+[WARNING] Pin io_oeb[35] is outside die area
+[WARNING] Pin io_oeb[36] is outside die area
+[WARNING] Pin io_oeb[37] is outside die area
+[WARNING] Pin io_oeb[3] is outside die area
+[WARNING] Pin io_oeb[4] is outside die area
+[WARNING] Pin io_oeb[5] is outside die area
+[WARNING] Pin io_oeb[6] is outside die area
+[WARNING] Pin io_oeb[7] is outside die area
+[WARNING] Pin io_oeb[8] is outside die area
+[WARNING] Pin io_oeb[9] is outside die area
+[WARNING] Pin io_out[0] is outside die area
+[WARNING] Pin io_out[10] is outside die area
+[WARNING] Pin io_out[11] is outside die area
+[WARNING] Pin io_out[12] is outside die area
+[WARNING] Pin io_out[13] is outside die area
+[WARNING] Pin io_out[14] is outside die area
+[WARNING] Pin io_out[15] is outside die area
+[WARNING] Pin io_out[16] is outside die area
+[WARNING] Pin io_out[17] is outside die area
+[WARNING] Pin io_out[18] is outside die area
+[WARNING] Pin io_out[19] is outside die area
+[WARNING] Pin io_out[1] is outside die area
+[WARNING] Pin io_out[20] is outside die area
+[WARNING] Pin io_out[21] is outside die area
+[WARNING] Pin io_out[22] is outside die area
+[WARNING] Pin io_out[23] is outside die area
+[WARNING] Pin io_out[24] is outside die area
+[WARNING] Pin io_out[25] is outside die area
+[WARNING] Pin io_out[26] is outside die area
+[WARNING] Pin io_out[27] is outside die area
+[WARNING] Pin io_out[28] is outside die area
+[WARNING] Pin io_out[29] is outside die area
+[WARNING] Pin io_out[2] is outside die area
+[WARNING] Pin io_out[30] is outside die area
+[WARNING] Pin io_out[31] is outside die area
+[WARNING] Pin io_out[32] is outside die area
+[WARNING] Pin io_out[33] is outside die area
+[WARNING] Pin io_out[34] is outside die area
+[WARNING] Pin io_out[35] is outside die area
+[WARNING] Pin io_out[36] is outside die area
+[WARNING] Pin io_out[37] is outside die area
+[WARNING] Pin io_out[3] is outside die area
+[WARNING] Pin io_out[4] is outside die area
+[WARNING] Pin io_out[5] is outside die area
+[WARNING] Pin io_out[6] is outside die area
+[WARNING] Pin io_out[7] is outside die area
+[WARNING] Pin io_out[8] is outside die area
+[WARNING] Pin io_out[9] is outside die area
+[WARNING] Pin la_data_in[0] is outside die area
+[WARNING] Pin la_data_in[100] is outside die area
+[WARNING] Pin la_data_in[101] is outside die area
+[WARNING] Pin la_data_in[102] is outside die area
+[WARNING] Pin la_data_in[103] is outside die area
+[WARNING] Pin la_data_in[104] is outside die area
+[WARNING] Pin la_data_in[105] is outside die area
+[WARNING] Pin la_data_in[106] is outside die area
+[WARNING] Pin la_data_in[107] is outside die area
+[WARNING] Pin la_data_in[108] is outside die area
+[WARNING] Pin la_data_in[109] is outside die area
+[WARNING] Pin la_data_in[10] is outside die area
+[WARNING] Pin la_data_in[110] is outside die area
+[WARNING] Pin la_data_in[111] is outside die area
+[WARNING] Pin la_data_in[112] is outside die area
+[WARNING] Pin la_data_in[113] is outside die area
+[WARNING] Pin la_data_in[114] is outside die area
+[WARNING] Pin la_data_in[115] is outside die area
+[WARNING] Pin la_data_in[116] is outside die area
+[WARNING] Pin la_data_in[117] is outside die area
+[WARNING] Pin la_data_in[118] is outside die area
+[WARNING] Pin la_data_in[119] is outside die area
+[WARNING] Pin la_data_in[11] is outside die area
+[WARNING] Pin la_data_in[120] is outside die area
+[WARNING] Pin la_data_in[121] is outside die area
+[WARNING] Pin la_data_in[122] is outside die area
+[WARNING] Pin la_data_in[123] is outside die area
+[WARNING] Pin la_data_in[124] is outside die area
+[WARNING] Pin la_data_in[125] is outside die area
+[WARNING] Pin la_data_in[126] is outside die area
+[WARNING] Pin la_data_in[127] is outside die area
+[WARNING] Pin la_data_in[12] is outside die area
+[WARNING] Pin la_data_in[13] is outside die area
+[WARNING] Pin la_data_in[14] is outside die area
+[WARNING] Pin la_data_in[15] is outside die area
+[WARNING] Pin la_data_in[16] is outside die area
+[WARNING] Pin la_data_in[17] is outside die area
+[WARNING] Pin la_data_in[18] is outside die area
+[WARNING] Pin la_data_in[19] is outside die area
+[WARNING] Pin la_data_in[1] is outside die area
+[WARNING] Pin la_data_in[20] is outside die area
+[WARNING] Pin la_data_in[21] is outside die area
+[WARNING] Pin la_data_in[22] is outside die area
+[WARNING] Pin la_data_in[23] is outside die area
+[WARNING] Pin la_data_in[24] is outside die area
+[WARNING] Pin la_data_in[25] is outside die area
+[WARNING] Pin la_data_in[26] is outside die area
+[WARNING] Pin la_data_in[27] is outside die area
+[WARNING] Pin la_data_in[28] is outside die area
+[WARNING] Pin la_data_in[29] is outside die area
+[WARNING] Pin la_data_in[2] is outside die area
+[WARNING] Pin la_data_in[30] is outside die area
+[WARNING] Pin la_data_in[31] is outside die area
+[WARNING] Pin la_data_in[32] is outside die area
+[WARNING] Pin la_data_in[33] is outside die area
+[WARNING] Pin la_data_in[34] is outside die area
+[WARNING] Pin la_data_in[35] is outside die area
+[WARNING] Pin la_data_in[36] is outside die area
+[WARNING] Pin la_data_in[37] is outside die area
+[WARNING] Pin la_data_in[38] is outside die area
+[WARNING] Pin la_data_in[39] is outside die area
+[WARNING] Pin la_data_in[3] is outside die area
+[WARNING] Pin la_data_in[40] is outside die area
+[WARNING] Pin la_data_in[41] is outside die area
+[WARNING] Pin la_data_in[42] is outside die area
+[WARNING] Pin la_data_in[43] is outside die area
+[WARNING] Pin la_data_in[44] is outside die area
+[WARNING] Pin la_data_in[45] is outside die area
+[WARNING] Pin la_data_in[46] is outside die area
+[WARNING] Pin la_data_in[47] is outside die area
+[WARNING] Pin la_data_in[48] is outside die area
+[WARNING] Pin la_data_in[49] is outside die area
+[WARNING] Pin la_data_in[4] is outside die area
+[WARNING] Pin la_data_in[50] is outside die area
+[WARNING] Pin la_data_in[51] is outside die area
+[WARNING] Pin la_data_in[52] is outside die area
+[WARNING] Pin la_data_in[53] is outside die area
+[WARNING] Pin la_data_in[54] is outside die area
+[WARNING] Pin la_data_in[55] is outside die area
+[WARNING] Pin la_data_in[56] is outside die area
+[WARNING] Pin la_data_in[57] is outside die area
+[WARNING] Pin la_data_in[58] is outside die area
+[WARNING] Pin la_data_in[59] is outside die area
+[WARNING] Pin la_data_in[5] is outside die area
+[WARNING] Pin la_data_in[60] is outside die area
+[WARNING] Pin la_data_in[61] is outside die area
+[WARNING] Pin la_data_in[62] is outside die area
+[WARNING] Pin la_data_in[63] is outside die area
+[WARNING] Pin la_data_in[64] is outside die area
+[WARNING] Pin la_data_in[65] is outside die area
+[WARNING] Pin la_data_in[66] is outside die area
+[WARNING] Pin la_data_in[67] is outside die area
+[WARNING] Pin la_data_in[68] is outside die area
+[WARNING] Pin la_data_in[69] is outside die area
+[WARNING] Pin la_data_in[6] is outside die area
+[WARNING] Pin la_data_in[70] is outside die area
+[WARNING] Pin la_data_in[71] is outside die area
+[WARNING] Pin la_data_in[72] is outside die area
+[WARNING] Pin la_data_in[73] is outside die area
+[WARNING] Pin la_data_in[74] is outside die area
+[WARNING] Pin la_data_in[75] is outside die area
+[WARNING] Pin la_data_in[76] is outside die area
+[WARNING] Pin la_data_in[77] is outside die area
+[WARNING] Pin la_data_in[78] is outside die area
+[WARNING] Pin la_data_in[79] is outside die area
+[WARNING] Pin la_data_in[7] is outside die area
+[WARNING] Pin la_data_in[80] is outside die area
+[WARNING] Pin la_data_in[81] is outside die area
+[WARNING] Pin la_data_in[82] is outside die area
+[WARNING] Pin la_data_in[83] is outside die area
+[WARNING] Pin la_data_in[84] is outside die area
+[WARNING] Pin la_data_in[85] is outside die area
+[WARNING] Pin la_data_in[86] is outside die area
+[WARNING] Pin la_data_in[87] is outside die area
+[WARNING] Pin la_data_in[88] is outside die area
+[WARNING] Pin la_data_in[89] is outside die area
+[WARNING] Pin la_data_in[8] is outside die area
+[WARNING] Pin la_data_in[90] is outside die area
+[WARNING] Pin la_data_in[91] is outside die area
+[WARNING] Pin la_data_in[92] is outside die area
+[WARNING] Pin la_data_in[93] is outside die area
+[WARNING] Pin la_data_in[94] is outside die area
+[WARNING] Pin la_data_in[95] is outside die area
+[WARNING] Pin la_data_in[96] is outside die area
+[WARNING] Pin la_data_in[97] is outside die area
+[WARNING] Pin la_data_in[98] is outside die area
+[WARNING] Pin la_data_in[99] is outside die area
+[WARNING] Pin la_data_in[9] is outside die area
+[WARNING] Pin la_data_out[0] is outside die area
+[WARNING] Pin la_data_out[100] is outside die area
+[WARNING] Pin la_data_out[101] is outside die area
+[WARNING] Pin la_data_out[102] is outside die area
+[WARNING] Pin la_data_out[103] is outside die area
+[WARNING] Pin la_data_out[104] is outside die area
+[WARNING] Pin la_data_out[105] is outside die area
+[WARNING] Pin la_data_out[106] is outside die area
+[WARNING] Pin la_data_out[107] is outside die area
+[WARNING] Pin la_data_out[108] is outside die area
+[WARNING] Pin la_data_out[109] is outside die area
+[WARNING] Pin la_data_out[10] is outside die area
+[WARNING] Pin la_data_out[110] is outside die area
+[WARNING] Pin la_data_out[111] is outside die area
+[WARNING] Pin la_data_out[112] is outside die area
+[WARNING] Pin la_data_out[113] is outside die area
+[WARNING] Pin la_data_out[114] is outside die area
+[WARNING] Pin la_data_out[115] is outside die area
+[WARNING] Pin la_data_out[116] is outside die area
+[WARNING] Pin la_data_out[117] is outside die area
+[WARNING] Pin la_data_out[118] is outside die area
+[WARNING] Pin la_data_out[119] is outside die area
+[WARNING] Pin la_data_out[11] is outside die area
+[WARNING] Pin la_data_out[120] is outside die area
+[WARNING] Pin la_data_out[121] is outside die area
+[WARNING] Pin la_data_out[122] is outside die area
+[WARNING] Pin la_data_out[123] is outside die area
+[WARNING] Pin la_data_out[124] is outside die area
+[WARNING] Pin la_data_out[125] is outside die area
+[WARNING] Pin la_data_out[126] is outside die area
+[WARNING] Pin la_data_out[127] is outside die area
+[WARNING] Pin la_data_out[12] is outside die area
+[WARNING] Pin la_data_out[13] is outside die area
+[WARNING] Pin la_data_out[14] is outside die area
+[WARNING] Pin la_data_out[15] is outside die area
+[WARNING] Pin la_data_out[16] is outside die area
+[WARNING] Pin la_data_out[17] is outside die area
+[WARNING] Pin la_data_out[18] is outside die area
+[WARNING] Pin la_data_out[19] is outside die area
+[WARNING] Pin la_data_out[1] is outside die area
+[WARNING] Pin la_data_out[20] is outside die area
+[WARNING] Pin la_data_out[21] is outside die area
+[WARNING] Pin la_data_out[22] is outside die area
+[WARNING] Pin la_data_out[23] is outside die area
+[WARNING] Pin la_data_out[24] is outside die area
+[WARNING] Pin la_data_out[25] is outside die area
+[WARNING] Pin la_data_out[26] is outside die area
+[WARNING] Pin la_data_out[27] is outside die area
+[WARNING] Pin la_data_out[28] is outside die area
+[WARNING] Pin la_data_out[29] is outside die area
+[WARNING] Pin la_data_out[2] is outside die area
+[WARNING] Pin la_data_out[30] is outside die area
+[WARNING] Pin la_data_out[31] is outside die area
+[WARNING] Pin la_data_out[32] is outside die area
+[WARNING] Pin la_data_out[33] is outside die area
+[WARNING] Pin la_data_out[34] is outside die area
+[WARNING] Pin la_data_out[35] is outside die area
+[WARNING] Pin la_data_out[36] is outside die area
+[WARNING] Pin la_data_out[37] is outside die area
+[WARNING] Pin la_data_out[38] is outside die area
+[WARNING] Pin la_data_out[39] is outside die area
+[WARNING] Pin la_data_out[3] is outside die area
+[WARNING] Pin la_data_out[40] is outside die area
+[WARNING] Pin la_data_out[41] is outside die area
+[WARNING] Pin la_data_out[42] is outside die area
+[WARNING] Pin la_data_out[43] is outside die area
+[WARNING] Pin la_data_out[44] is outside die area
+[WARNING] Pin la_data_out[45] is outside die area
+[WARNING] Pin la_data_out[46] is outside die area
+[WARNING] Pin la_data_out[47] is outside die area
+[WARNING] Pin la_data_out[48] is outside die area
+[WARNING] Pin la_data_out[49] is outside die area
+[WARNING] Pin la_data_out[4] is outside die area
+[WARNING] Pin la_data_out[50] is outside die area
+[WARNING] Pin la_data_out[51] is outside die area
+[WARNING] Pin la_data_out[52] is outside die area
+[WARNING] Pin la_data_out[53] is outside die area
+[WARNING] Pin la_data_out[54] is outside die area
+[WARNING] Pin la_data_out[55] is outside die area
+[WARNING] Pin la_data_out[56] is outside die area
+[WARNING] Pin la_data_out[57] is outside die area
+[WARNING] Pin la_data_out[58] is outside die area
+[WARNING] Pin la_data_out[59] is outside die area
+[WARNING] Pin la_data_out[5] is outside die area
+[WARNING] Pin la_data_out[60] is outside die area
+[WARNING] Pin la_data_out[61] is outside die area
+[WARNING] Pin la_data_out[62] is outside die area
+[WARNING] Pin la_data_out[63] is outside die area
+[WARNING] Pin la_data_out[64] is outside die area
+[WARNING] Pin la_data_out[65] is outside die area
+[WARNING] Pin la_data_out[66] is outside die area
+[WARNING] Pin la_data_out[67] is outside die area
+[WARNING] Pin la_data_out[68] is outside die area
+[WARNING] Pin la_data_out[69] is outside die area
+[WARNING] Pin la_data_out[6] is outside die area
+[WARNING] Pin la_data_out[70] is outside die area
+[WARNING] Pin la_data_out[71] is outside die area
+[WARNING] Pin la_data_out[72] is outside die area
+[WARNING] Pin la_data_out[73] is outside die area
+[WARNING] Pin la_data_out[74] is outside die area
+[WARNING] Pin la_data_out[75] is outside die area
+[WARNING] Pin la_data_out[76] is outside die area
+[WARNING] Pin la_data_out[77] is outside die area
+[WARNING] Pin la_data_out[78] is outside die area
+[WARNING] Pin la_data_out[79] is outside die area
+[WARNING] Pin la_data_out[7] is outside die area
+[WARNING] Pin la_data_out[80] is outside die area
+[WARNING] Pin la_data_out[81] is outside die area
+[WARNING] Pin la_data_out[82] is outside die area
+[WARNING] Pin la_data_out[83] is outside die area
+[WARNING] Pin la_data_out[84] is outside die area
+[WARNING] Pin la_data_out[85] is outside die area
+[WARNING] Pin la_data_out[86] is outside die area
+[WARNING] Pin la_data_out[87] is outside die area
+[WARNING] Pin la_data_out[88] is outside die area
+[WARNING] Pin la_data_out[89] is outside die area
+[WARNING] Pin la_data_out[8] is outside die area
+[WARNING] Pin la_data_out[90] is outside die area
+[WARNING] Pin la_data_out[91] is outside die area
+[WARNING] Pin la_data_out[92] is outside die area
+[WARNING] Pin la_data_out[93] is outside die area
+[WARNING] Pin la_data_out[94] is outside die area
+[WARNING] Pin la_data_out[95] is outside die area
+[WARNING] Pin la_data_out[96] is outside die area
+[WARNING] Pin la_data_out[97] is outside die area
+[WARNING] Pin la_data_out[98] is outside die area
+[WARNING] Pin la_data_out[99] is outside die area
+[WARNING] Pin la_data_out[9] is outside die area
+[WARNING] Pin la_oen[0] is outside die area
+[WARNING] Pin la_oen[100] is outside die area
+[WARNING] Pin la_oen[101] is outside die area
+[WARNING] Pin la_oen[102] is outside die area
+[WARNING] Pin la_oen[103] is outside die area
+[WARNING] Pin la_oen[104] is outside die area
+[WARNING] Pin la_oen[105] is outside die area
+[WARNING] Pin la_oen[106] is outside die area
+[WARNING] Pin la_oen[107] is outside die area
+[WARNING] Pin la_oen[108] is outside die area
+[WARNING] Pin la_oen[109] is outside die area
+[WARNING] Pin la_oen[10] is outside die area
+[WARNING] Pin la_oen[110] is outside die area
+[WARNING] Pin la_oen[111] is outside die area
+[WARNING] Pin la_oen[112] is outside die area
+[WARNING] Pin la_oen[113] is outside die area
+[WARNING] Pin la_oen[114] is outside die area
+[WARNING] Pin la_oen[115] is outside die area
+[WARNING] Pin la_oen[116] is outside die area
+[WARNING] Pin la_oen[117] is outside die area
+[WARNING] Pin la_oen[118] is outside die area
+[WARNING] Pin la_oen[119] is outside die area
+[WARNING] Pin la_oen[11] is outside die area
+[WARNING] Pin la_oen[120] is outside die area
+[WARNING] Pin la_oen[121] is outside die area
+[WARNING] Pin la_oen[122] is outside die area
+[WARNING] Pin la_oen[123] is outside die area
+[WARNING] Pin la_oen[124] is outside die area
+[WARNING] Pin la_oen[125] is outside die area
+[WARNING] Pin la_oen[126] is outside die area
+[WARNING] Pin la_oen[127] is outside die area
+[WARNING] Pin la_oen[12] is outside die area
+[WARNING] Pin la_oen[13] is outside die area
+[WARNING] Pin la_oen[14] is outside die area
+[WARNING] Pin la_oen[15] is outside die area
+[WARNING] Pin la_oen[16] is outside die area
+[WARNING] Pin la_oen[17] is outside die area
+[WARNING] Pin la_oen[18] is outside die area
+[WARNING] Pin la_oen[19] is outside die area
+[WARNING] Pin la_oen[1] is outside die area
+[WARNING] Pin la_oen[20] is outside die area
+[WARNING] Pin la_oen[21] is outside die area
+[WARNING] Pin la_oen[22] is outside die area
+[WARNING] Pin la_oen[23] is outside die area
+[WARNING] Pin la_oen[24] is outside die area
+[WARNING] Pin la_oen[25] is outside die area
+[WARNING] Pin la_oen[26] is outside die area
+[WARNING] Pin la_oen[27] is outside die area
+[WARNING] Pin la_oen[28] is outside die area
+[WARNING] Pin la_oen[29] is outside die area
+[WARNING] Pin la_oen[2] is outside die area
+[WARNING] Pin la_oen[30] is outside die area
+[WARNING] Pin la_oen[31] is outside die area
+[WARNING] Pin la_oen[32] is outside die area
+[WARNING] Pin la_oen[33] is outside die area
+[WARNING] Pin la_oen[34] is outside die area
+[WARNING] Pin la_oen[35] is outside die area
+[WARNING] Pin la_oen[36] is outside die area
+[WARNING] Pin la_oen[37] is outside die area
+[WARNING] Pin la_oen[38] is outside die area
+[WARNING] Pin la_oen[39] is outside die area
+[WARNING] Pin la_oen[3] is outside die area
+[WARNING] Pin la_oen[40] is outside die area
+[WARNING] Pin la_oen[41] is outside die area
+[WARNING] Pin la_oen[42] is outside die area
+[WARNING] Pin la_oen[43] is outside die area
+[WARNING] Pin la_oen[44] is outside die area
+[WARNING] Pin la_oen[45] is outside die area
+[WARNING] Pin la_oen[46] is outside die area
+[WARNING] Pin la_oen[47] is outside die area
+[WARNING] Pin la_oen[48] is outside die area
+[WARNING] Pin la_oen[49] is outside die area
+[WARNING] Pin la_oen[4] is outside die area
+[WARNING] Pin la_oen[50] is outside die area
+[WARNING] Pin la_oen[51] is outside die area
+[WARNING] Pin la_oen[52] is outside die area
+[WARNING] Pin la_oen[53] is outside die area
+[WARNING] Pin la_oen[54] is outside die area
+[WARNING] Pin la_oen[55] is outside die area
+[WARNING] Pin la_oen[56] is outside die area
+[WARNING] Pin la_oen[57] is outside die area
+[WARNING] Pin la_oen[58] is outside die area
+[WARNING] Pin la_oen[59] is outside die area
+[WARNING] Pin la_oen[5] is outside die area
+[WARNING] Pin la_oen[60] is outside die area
+[WARNING] Pin la_oen[61] is outside die area
+[WARNING] Pin la_oen[62] is outside die area
+[WARNING] Pin la_oen[63] is outside die area
+[WARNING] Pin la_oen[64] is outside die area
+[WARNING] Pin la_oen[65] is outside die area
+[WARNING] Pin la_oen[66] is outside die area
+[WARNING] Pin la_oen[67] is outside die area
+[WARNING] Pin la_oen[68] is outside die area
+[WARNING] Pin la_oen[69] is outside die area
+[WARNING] Pin la_oen[6] is outside die area
+[WARNING] Pin la_oen[70] is outside die area
+[WARNING] Pin la_oen[71] is outside die area
+[WARNING] Pin la_oen[72] is outside die area
+[WARNING] Pin la_oen[73] is outside die area
+[WARNING] Pin la_oen[74] is outside die area
+[WARNING] Pin la_oen[75] is outside die area
+[WARNING] Pin la_oen[76] is outside die area
+[WARNING] Pin la_oen[77] is outside die area
+[WARNING] Pin la_oen[78] is outside die area
+[WARNING] Pin la_oen[79] is outside die area
+[WARNING] Pin la_oen[7] is outside die area
+[WARNING] Pin la_oen[80] is outside die area
+[WARNING] Pin la_oen[81] is outside die area
+[WARNING] Pin la_oen[82] is outside die area
+[WARNING] Pin la_oen[83] is outside die area
+[WARNING] Pin la_oen[84] is outside die area
+[WARNING] Pin la_oen[85] is outside die area
+[WARNING] Pin la_oen[86] is outside die area
+[WARNING] Pin la_oen[87] is outside die area
+[WARNING] Pin la_oen[88] is outside die area
+[WARNING] Pin la_oen[89] is outside die area
+[WARNING] Pin la_oen[8] is outside die area
+[WARNING] Pin la_oen[90] is outside die area
+[WARNING] Pin la_oen[91] is outside die area
+[WARNING] Pin la_oen[92] is outside die area
+[WARNING] Pin la_oen[93] is outside die area
+[WARNING] Pin la_oen[94] is outside die area
+[WARNING] Pin la_oen[95] is outside die area
+[WARNING] Pin la_oen[96] is outside die area
+[WARNING] Pin la_oen[97] is outside die area
+[WARNING] Pin la_oen[98] is outside die area
+[WARNING] Pin la_oen[99] is outside die area
+[WARNING] Pin la_oen[9] is outside die area
+[WARNING] Pin user_clock2 is outside die area
+[WARNING] Pin wb_clk_i is outside die area
+[WARNING] Pin wb_rst_i is outside die area
+[WARNING] Pin wbs_ack_o is outside die area
+[WARNING] Pin wbs_adr_i[0] is outside die area
+[WARNING] Pin wbs_adr_i[10] is outside die area
+[WARNING] Pin wbs_adr_i[11] is outside die area
+[WARNING] Pin wbs_adr_i[12] is outside die area
+[WARNING] Pin wbs_adr_i[13] is outside die area
+[WARNING] Pin wbs_adr_i[14] is outside die area
+[WARNING] Pin wbs_adr_i[15] is outside die area
+[WARNING] Pin wbs_adr_i[16] is outside die area
+[WARNING] Pin wbs_adr_i[17] is outside die area
+[WARNING] Pin wbs_adr_i[18] is outside die area
+[WARNING] Pin wbs_adr_i[19] is outside die area
+[WARNING] Pin wbs_adr_i[1] is outside die area
+[WARNING] Pin wbs_adr_i[20] is outside die area
+[WARNING] Pin wbs_adr_i[21] is outside die area
+[WARNING] Pin wbs_adr_i[22] is outside die area
+[WARNING] Pin wbs_adr_i[23] is outside die area
+[WARNING] Pin wbs_adr_i[24] is outside die area
+[WARNING] Pin wbs_adr_i[25] is outside die area
+[WARNING] Pin wbs_adr_i[26] is outside die area
+[WARNING] Pin wbs_adr_i[27] is outside die area
+[WARNING] Pin wbs_adr_i[28] is outside die area
+[WARNING] Pin wbs_adr_i[29] is outside die area
+[WARNING] Pin wbs_adr_i[2] is outside die area
+[WARNING] Pin wbs_adr_i[30] is outside die area
+[WARNING] Pin wbs_adr_i[31] is outside die area
+[WARNING] Pin wbs_adr_i[3] is outside die area
+[WARNING] Pin wbs_adr_i[4] is outside die area
+[WARNING] Pin wbs_adr_i[5] is outside die area
+[WARNING] Pin wbs_adr_i[6] is outside die area
+[WARNING] Pin wbs_adr_i[7] is outside die area
+[WARNING] Pin wbs_adr_i[8] is outside die area
+[WARNING] Pin wbs_adr_i[9] is outside die area
+[WARNING] Pin wbs_cyc_i is outside die area
+[WARNING] Pin wbs_dat_i[0] is outside die area
+[WARNING] Pin wbs_dat_i[10] is outside die area
+[WARNING] Pin wbs_dat_i[11] is outside die area
+[WARNING] Pin wbs_dat_i[12] is outside die area
+[WARNING] Pin wbs_dat_i[13] is outside die area
+[WARNING] Pin wbs_dat_i[14] is outside die area
+[WARNING] Pin wbs_dat_i[15] is outside die area
+[WARNING] Pin wbs_dat_i[16] is outside die area
+[WARNING] Pin wbs_dat_i[17] is outside die area
+[WARNING] Pin wbs_dat_i[18] is outside die area
+[WARNING] Pin wbs_dat_i[19] is outside die area
+[WARNING] Pin wbs_dat_i[1] is outside die area
+[WARNING] Pin wbs_dat_i[20] is outside die area
+[WARNING] Pin wbs_dat_i[21] is outside die area
+[WARNING] Pin wbs_dat_i[22] is outside die area
+[WARNING] Pin wbs_dat_i[23] is outside die area
+[WARNING] Pin wbs_dat_i[24] is outside die area
+[WARNING] Pin wbs_dat_i[25] is outside die area
+[WARNING] Pin wbs_dat_i[26] is outside die area
+[WARNING] Pin wbs_dat_i[27] is outside die area
+[WARNING] Pin wbs_dat_i[28] is outside die area
+[WARNING] Pin wbs_dat_i[29] is outside die area
+[WARNING] Pin wbs_dat_i[2] is outside die area
+[WARNING] Pin wbs_dat_i[30] is outside die area
+[WARNING] Pin wbs_dat_i[31] is outside die area
+[WARNING] Pin wbs_dat_i[3] is outside die area
+[WARNING] Pin wbs_dat_i[4] is outside die area
+[WARNING] Pin wbs_dat_i[5] is outside die area
+[WARNING] Pin wbs_dat_i[6] is outside die area
+[WARNING] Pin wbs_dat_i[7] is outside die area
+[WARNING] Pin wbs_dat_i[8] is outside die area
+[WARNING] Pin wbs_dat_i[9] is outside die area
+[WARNING] Pin wbs_dat_o[0] is outside die area
+[WARNING] Pin wbs_dat_o[10] is outside die area
+[WARNING] Pin wbs_dat_o[11] is outside die area
+[WARNING] Pin wbs_dat_o[12] is outside die area
+[WARNING] Pin wbs_dat_o[13] is outside die area
+[WARNING] Pin wbs_dat_o[14] is outside die area
+[WARNING] Pin wbs_dat_o[15] is outside die area
+[WARNING] Pin wbs_dat_o[16] is outside die area
+[WARNING] Pin wbs_dat_o[17] is outside die area
+[WARNING] Pin wbs_dat_o[18] is outside die area
+[WARNING] Pin wbs_dat_o[19] is outside die area
+[WARNING] Pin wbs_dat_o[1] is outside die area
+[WARNING] Pin wbs_dat_o[20] is outside die area
+[WARNING] Pin wbs_dat_o[21] is outside die area
+[WARNING] Pin wbs_dat_o[22] is outside die area
+[WARNING] Pin wbs_dat_o[23] is outside die area
+[WARNING] Pin wbs_dat_o[24] is outside die area
+[WARNING] Pin wbs_dat_o[25] is outside die area
+[WARNING] Pin wbs_dat_o[26] is outside die area
+[WARNING] Pin wbs_dat_o[27] is outside die area
+[WARNING] Pin wbs_dat_o[28] is outside die area
+[WARNING] Pin wbs_dat_o[29] is outside die area
+[WARNING] Pin wbs_dat_o[2] is outside die area
+[WARNING] Pin wbs_dat_o[30] is outside die area
+[WARNING] Pin wbs_dat_o[31] is outside die area
+[WARNING] Pin wbs_dat_o[3] is outside die area
+[WARNING] Pin wbs_dat_o[4] is outside die area
+[WARNING] Pin wbs_dat_o[5] is outside die area
+[WARNING] Pin wbs_dat_o[6] is outside die area
+[WARNING] Pin wbs_dat_o[7] is outside die area
+[WARNING] Pin wbs_dat_o[8] is outside die area
+[WARNING] Pin wbs_dat_o[9] is outside die area
+[WARNING] Pin wbs_sel_i[0] is outside die area
+[WARNING] Pin wbs_sel_i[1] is outside die area
+[WARNING] Pin wbs_sel_i[2] is outside die area
+[WARNING] Pin wbs_sel_i[3] is outside die area
+[WARNING] Pin wbs_stb_i is outside die area
+[WARNING] Pin wbs_we_i is outside die area
 [INFO] Minimum degree: 2
 [INFO] Maximum degree: 2
-[INFO] Processing 1 obstacles in layer 1
-[INFO] Processing 1 obstacles in layer 2
-[INFO] Processing 737 obstacles in layer 3
-[INFO] Processing 465 obstacles in layer 4
-[INFO] Processing 1 obstacles in layer 5
-[INFO] Processing 3 obstacles in layer 6
+[INFO] Processing 1 obstacles on layer 1
+[INFO] Processing 1 obstacles on layer 2
+[INFO] Processing 803 obstacles on layer 3
+[INFO] Processing 485 obstacles on layer 4
+[INFO] Processing 150 obstacles on layer 5
+[INFO] Processing 172 obstacles on layer 6
 [INFO] Reducing resources of layer 1 by 99%
-[INFO] Reducing resources of layer 2 by 20%
-[INFO] Reducing resources of layer 3 by 20%
-[INFO] Reducing resources of layer 4 by 20%
-[INFO] Reducing resources of layer 5 by 10%
-[INFO] Reducing resources of layer 6 by 10%
-[INFO] WIRELEN : 217266, WIRELEN1 : 0
-[INFO] NumSeg  : 612
+[INFO] WIRELEN : 172670, WIRELEN1 : 0
+[INFO] NumSeg  : 604
 [INFO] NumShift: 0
 First L Route
-[INFO] WIRELEN : 217266, WIRELEN1 : 217266
-[INFO] NumSeg  : 612
+[INFO] WIRELEN : 172670, WIRELEN1 : 172670
+[INFO] NumSeg  : 604
 [INFO] NumShift: 0
-[Overflow Report] Total hCap    : 5199960
-[Overflow Report] Total vCap    : 3750440
-[Overflow Report] Total Usage   : 217266
-[Overflow Report] Max H Overflow: 14
-[Overflow Report] Max V Overflow: 32
-[Overflow Report] Max Overflow  : 32
-[Overflow Report] Num Overflow e: 1912
-[Overflow Report] H   Overflow  : 2479
-[Overflow Report] V   Overflow  : 16370
-[Overflow Report] Final Overflow: 18849
+[Overflow Report] Total hCap    : 5929097
+[Overflow Report] Total vCap    : 3859057
+[Overflow Report] Total Usage   : 172670
+[Overflow Report] Max H Overflow: 23
+[Overflow Report] Max V Overflow: 3
+[Overflow Report] Max Overflow  : 23
+[Overflow Report] Num Overflow e: 21073
+[Overflow Report] H   Overflow  : 8716
+[Overflow Report] V   Overflow  : 24567
+[Overflow Report] Final Overflow: 33283
 
 Second L Route
-[Overflow Report] Total hCap    : 5199960
-[Overflow Report] Total vCap    : 3750440
-[Overflow Report] Total Usage   : 217266
-[Overflow Report] Max H Overflow: 14
-[Overflow Report] Max V Overflow: 32
-[Overflow Report] Max Overflow  : 32
-[Overflow Report] Num Overflow e: 1914
-[Overflow Report] H   Overflow  : 2480
-[Overflow Report] V   Overflow  : 16370
-[Overflow Report] Final Overflow: 18850
+[Overflow Report] Total hCap    : 5929097
+[Overflow Report] Total vCap    : 3859057
+[Overflow Report] Total Usage   : 172670
+[Overflow Report] Max H Overflow: 22
+[Overflow Report] Max V Overflow: 3
+[Overflow Report] Max Overflow  : 22
+[Overflow Report] Num Overflow e: 21034
+[Overflow Report] H   Overflow  : 8722
+[Overflow Report] V   Overflow  : 24292
+[Overflow Report] Final Overflow: 33014
 
 First Z Route
-[Overflow Report] Total hCap    : 5199960
-[Overflow Report] Total vCap    : 3750440
-[Overflow Report] Total Usage   : 217266
-[Overflow Report] Max H Overflow: 0
-[Overflow Report] Max V Overflow: 0
-[Overflow Report] Max Overflow  : 0
-[Overflow Report] Num Overflow e: 0
-[Overflow Report] H   Overflow  : 0
-[Overflow Report] V   Overflow  : 0
-[Overflow Report] Final Overflow: 0
+[Overflow Report] Total hCap    : 5929097
+[Overflow Report] Total vCap    : 3859057
+[Overflow Report] Total Usage   : 172670
+[Overflow Report] Max H Overflow: 3
+[Overflow Report] Max V Overflow: 9
+[Overflow Report] Max Overflow  : 9
+[Overflow Report] Num Overflow e: 12401
+[Overflow Report] H   Overflow  : 18
+[Overflow Report] V   Overflow  : 12548
+[Overflow Report] Final Overflow: 12566
 
 [INFO] LV routing round 0, enlarge 10 
 [INFO] 10 threshold, 10 expand
-[Overflow Report] total Usage   : 217266
-[Overflow Report] Max H Overflow: 25
-[Overflow Report] Max V Overflow: 36
-[Overflow Report] Max Overflow  : 36
-[Overflow Report] Num Overflow e: 1348
-[Overflow Report] H   Overflow  : 3605
-[Overflow Report] V   Overflow  : 10206
-[Overflow Report] Final Overflow: 13811
+[Overflow Report] total Usage   : 172684
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 5
+[Overflow Report] Max Overflow  : 5
+[Overflow Report] Num Overflow e: 11217
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 11356
+[Overflow Report] Final Overflow: 11356
 
 [INFO] LV routing round 1, enlarge 15 
 [INFO] 5 threshold, 15 expand
-[Overflow Report] total Usage   : 217296
+[Overflow Report] total Usage   : 172682
 [Overflow Report] Max H Overflow: 0
-[Overflow Report] Max V Overflow: 0
-[Overflow Report] Max Overflow  : 0
-[Overflow Report] Num Overflow e: 0
+[Overflow Report] Max V Overflow: 6
+[Overflow Report] Max Overflow  : 6
+[Overflow Report] Num Overflow e: 11191
 [Overflow Report] H   Overflow  : 0
-[Overflow Report] V   Overflow  : 0
-[Overflow Report] Final Overflow: 0
+[Overflow Report] V   Overflow  : 11377
+[Overflow Report] Final Overflow: 11377
 
 [INFO] LV routing round 2, enlarge 20 
 [INFO] 1 threshold, 20 expand
-[Overflow Report] total Usage   : 217296
+[Overflow Report] total Usage   : 172682
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 5
+[Overflow Report] Max Overflow  : 5
+[Overflow Report] Num Overflow e: 11185
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 11343
+[Overflow Report] Final Overflow: 11343
+
+Running extra iterations to remove overflow...
+Update congestion history type 1
+[INFO] iteration 1, enlarge 25, costheight 6, threshold 10 via cost 2 
+[INFO] log_coef 0.766449, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 174096
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 5772
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 5772
+[Overflow Report] Final Overflow: 5772
+
+Update congestion history type 1
+[INFO] iteration 2, enlarge 35, costheight 8, threshold 6 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 174562
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 4681
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 4681
+[Overflow Report] Final Overflow: 4681
+
+Update congestion history type 1
+[INFO] iteration 3, enlarge 45, costheight 15, threshold 2 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 175554
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 2964
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 2964
+[Overflow Report] Final Overflow: 2964
+
+Update congestion history type 1
+[INFO] iteration 4, enlarge 55, costheight 17, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 176098
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 2184
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 2184
+[Overflow Report] Final Overflow: 2184
+
+Update congestion history type 1
+[INFO] iteration 5, enlarge 65, costheight 24, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 177000
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 1094
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 1094
+[Overflow Report] Final Overflow: 1094
+
+Update congestion history type 1
+[INFO] iteration 6, enlarge 70, costheight 26, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 177282
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 780
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 780
+[Overflow Report] Final Overflow: 780
+
+Update congestion history type 1
+[INFO] iteration 7, enlarge 75, costheight 33, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 177742
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 313
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 313
+[Overflow Report] Final Overflow: 313
+
+Update congestion history type 1
+[INFO] iteration 8, enlarge 80, costheight 38, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 5 L 0 cost_type 1 updatetype 2
+[Overflow Report] total Usage   : 177754
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 312
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 312
+[Overflow Report] Final Overflow: 312
+
+Update congestion history type 2
+[INFO] iteration 9, enlarge 85, costheight 48, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 5 L 1 cost_type 1 updatetype 2
+[Overflow Report] total Usage   : 177924
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 156
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 156
+[Overflow Report] Final Overflow: 156
+
+Update congestion history type 2
+[INFO] iteration 10, enlarge 90, costheight 53, threshold 0 via cost 2 
+[INFO] log_coef 2.000000, healingTrigger 0 cost_step 5 L 1 cost_type 1 updatetype 2
+[Overflow Report] total Usage   : 177926
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 1
+[Overflow Report] Max Overflow  : 1
+[Overflow Report] Num Overflow e: 156
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 156
+[Overflow Report] Final Overflow: 156
+
+Update congestion history type 2
+[INFO] iteration 11, enlarge 95, costheight 63, threshold 0 via cost 0 
+[INFO] log_coef 2.000000, healingTrigger 1 cost_step 5 L 1 cost_type 1 updatetype 2
+[Overflow Report] total Usage   : 178114
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -114,9 +1198,9 @@ First Z Route
 
 Usage checked
 Maze routing finished
-[INFO] P3 runtime: 0.040000 sec
+[INFO] P3 runtime: 1.140000 sec
 [INFO] Final 2D results: 
-[Overflow Report] total Usage   : 217296
+[Overflow Report] total Usage   : 178114
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -127,38 +1211,38 @@ Maze routing finished
 
 Layer Assignment Begins
 Layer assignment finished
-[INFO] 2D + Layer Assignment Runtime: 0.420000 sec
+[INFO] 2D + Layer Assignment Runtime: 1.590000 sec
 Post Processing Begins 
 Post Processsing finished
  Starting via filling
-[INFO] Via related to pin nodes 1870
+[INFO] Via related to pin nodes 2174
 [INFO] Via related stiner nodes 0
 Via filling finished
 
 Final usage/overflow report: 
 [INFO] Usage per layer: 
     Layer 1 usage: 0
-    Layer 2 usage: 80291
-    Layer 3 usage: 135491
-    Layer 4 usage: 1067
-    Layer 5 usage: 447
-    Layer 6 usage: 0
+    Layer 2 usage: 60608
+    Layer 3 usage: 72450
+    Layer 4 usage: 24663
+    Layer 5 usage: 18864
+    Layer 6 usage: 1529
 
 [INFO] Capacity per layer: 
     Layer 1 capacity: 0
-    Layer 2 capacity: 3328398
-    Layer 3 capacity: 2498345
-    Layer 4 capacity: 1662984
-    Layer 5 capacity: 1252095
-    Layer 6 capacity: 208578
+    Layer 2 capacity: 3665694
+    Layer 3 capacity: 2751374
+    Layer 4 capacity: 1834234
+    Layer 5 capacity: 1107683
+    Layer 6 capacity: 429169
 
 [INFO] Use percentage per layer: 
     Layer 1 use percentage: 0.0%
-    Layer 2 use percentage: 2.41%
-    Layer 3 use percentage: 5.42%
-    Layer 4 use percentage: 0.06%
-    Layer 5 use percentage: 0.04%
-    Layer 6 use percentage: 0.00%
+    Layer 2 use percentage: 1.65%
+    Layer 3 use percentage: 2.63%
+    Layer 4 use percentage: 1.34%
+    Layer 5 use percentage: 1.70%
+    Layer 6 use percentage: 0.36%
 
 [INFO] Overflow per layer: 
     Layer 1 overflow: 0
@@ -168,8 +1252,8 @@ Final usage/overflow report:
     Layer 5 overflow: 0
     Layer 6 overflow: 0
 
-[Overflow Report] Total Usage   : 217296
-[Overflow Report] Total Capacity: 8950400
+[Overflow Report] Total Usage   : 178114
+[Overflow Report] Total Capacity: 9788154
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -177,379 +1261,9 @@ Final usage/overflow report:
 [Overflow Report] V   Overflow  : 0
 [Overflow Report] Final Overflow: 0
 
-[INFO] Final usage          : 217296
-[INFO] Final number of vias : 2930
-[INFO] Final usage 3D       : 226086
-[INFO] Total wirelength: 1535519 um
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Notice 0: Split top of 1 T shapes.
-Notice 0: Split top of 2 T shapes.
-Repairing antennas...
-[WARNING]No OR_DEFAULT vias defined
-[INFO] #Antenna violations: 0
-[INFO] Num routed nets: 612
+[INFO] Final usage          : 178114
+[INFO] Final number of vias : 3608
+[INFO] Final usage 3D       : 188938
+[INFO] Total wirelength: 1267868 um
+[INFO] Num routed nets: 604
+[WARN]: No CLOCK_PORT found. Skipping STA...

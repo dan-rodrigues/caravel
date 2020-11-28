@@ -6,12 +6,12 @@ Notice 0: Finished LEF file:  /project/openlane/user_project_wrapper/runs/user_p
 Notice 0: 
 Reading DEF file: /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/ioPlacer.def
 Notice 0: Design: user_project_wrapper
-Notice 0:     Created 613 pins.
+Notice 0:     Created 636 pins.
 Notice 0:     Created 1 components and 614 component-terminals.
-Notice 0:     Created 613 nets and 612 connections.
+Notice 0:     Created 636 nets and 604 connections.
 Notice 0: Finished DEF file: /project/openlane/user_project_wrapper/runs/user_project_wrapper/tmp/floorplan/ioPlacer.def
 Placing the following macros:
-{'mprj': ['1355000', '3000000', 'N']}
+{'mprj': ['400000', '400000', 'N']}
 Design name: user_project_wrapper
 Placing mprj
 Successfully placed 1 instances

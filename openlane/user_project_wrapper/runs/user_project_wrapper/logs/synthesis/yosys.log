@@ -31,10 +31,9 @@
 Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/defines.v' to AST representation.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/user_proj_example.v
-Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/user_proj_example.v' to AST representation.
-Generating RTLIL representation for module `\user_proj_example'.
-Generating RTLIL representation for module `\counter'.
+2. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/vdp_lite_user_proj/vdp_lite_user_proj.v
+Parsing Verilog input from `/project/openlane/user_project_wrapper/../../verilog/rtl/vdp_lite_user_proj/vdp_lite_user_proj.v' to AST representation.
+Generating RTLIL representation for module `\vdp_lite_user_proj'.
 Successfully finished Verilog frontend.
 
 3. Executing Verilog-2005 frontend: /project/openlane/user_project_wrapper/../../verilog/rtl/defines.v
@@ -63,15 +62,15 @@ Removed 0 unused modules.
 
 === user_project_wrapper ===
 
-   Number of wires:                 25
-   Number of wire bits:            613
-   Number of public wires:          25
-   Number of public wire bits:     613
+   Number of wires:                 18
+   Number of wire bits:            636
+   Number of public wires:          18
+   Number of public wire bits:     636
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     user_proj_example               1
+     vdp_lite_user_proj              1
 
 8. Executing SPLITNETS pass (splitting up multi-bit signals).
 
@@ -86,21 +85,21 @@ found and reported 0 problems.
 
 === user_project_wrapper ===
 
-   Number of wires:                 25
-   Number of wire bits:            613
-   Number of public wires:          25
-   Number of public wire bits:     613
+   Number of wires:                 18
+   Number of wire bits:            636
+   Number of public wires:          18
+   Number of public wire bits:     636
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     user_proj_example               1
+     vdp_lite_user_proj              1
 
-   Area for cell type \user_proj_example is unknown!
+   Area for cell type \vdp_lite_user_proj is unknown!
 
 12. Executing Verilog backend.
 Dumping module `\user_project_wrapper'.
 
-End of script. Logfile hash: 8e6757d851, CPU: user 0.05s system 0.00s, MEM: 13.29 MB peak
+End of script. Logfile hash: 61efee330a, CPU: user 0.16s system 0.03s, MEM: 14.72 MB peak
 Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
-Time spent: 65% 2x stat (0 sec), 16% 8x read_verilog (0 sec), ...
+Time spent: 70% 2x stat (0 sec), 15% 8x read_verilog (0 sec), ...

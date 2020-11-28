@@ -4,6 +4,7 @@ set ::env(DESIGN_NAME) vdp_lite_user_proj
 
 set ::env(DESIGN_IS_CORE) 0
 set ::env(FP_PDN_CORE_RING) 0
+set ::env(GLB_RT_MAXLAYER) 5
 
 set ::env(VERILOG_FILES) "\
     $script_dir/../../verilog/rtl/defines.v \
@@ -33,6 +34,10 @@ set ::env(DIE_AREA) "0 0 1400 1100"
 set ::env(PL_TARGET_DENSITY) 0.2
 
 set ::env(DIODE_INSERTION_STRATEGY) 1
+
+# Extra options:
+
+set ::env(ROUTING_CORES) 6
 
 # set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10
 

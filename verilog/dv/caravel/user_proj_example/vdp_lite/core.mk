@@ -1,7 +1,7 @@
 # Required config:
 
 # Rename these accordingly
-GCC_PREFIX=/Users/dan.rodrigues/opt/riscv-none-embed-gcc/8.3.0-1.1/bin/riscv-none-embed-
+GCC_PREFIX=/opt/xPacks/riscv-none-embed-gcc/xpack-riscv-none-embed-gcc-8.3.0-2.3/bin/riscv-none-embed-
 PDK_PATH?=/Users/dan.rodrigues/hw/sky130A
 
 ###

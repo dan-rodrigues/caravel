@@ -1,3 +1,9 @@
+// video_frame_tb.v
+//
+// Copyright (C) 2020 Dan Rodrigues <danrr.gh.oss@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
+
 `timescale 1 ns / 1 ps
 
 `default_nettype none

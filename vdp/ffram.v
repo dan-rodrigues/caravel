@@ -1,3 +1,9 @@
+// ffram.v
+//
+// Copyright (C) 2020 Dan Rodrigues <danrr.gh.oss@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
+
 `default_nettype none
 
 module ffram #(

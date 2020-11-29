@@ -1,3 +1,9 @@
+// vdp_lite_mprj_io.vh
+//
+// Copyright (C) 2020 Dan Rodrigues <danrr.gh.oss@gmail.com>
+//
+// SPDX-License-Identifier: Apache-2.0
+
 `ifndef vdp_lite_mprj_io_vh
 `define vdp_lite_mprj_io_vh
 

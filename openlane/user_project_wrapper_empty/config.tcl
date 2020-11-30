@@ -40,10 +40,10 @@ set ::env(VERILOG_FILES_BLACKBOX) "\
 set ::env(VERILOG_INCLUDE_DIRS) "$script_dir/../../vdp/"
 
 set ::env(EXTRA_LEFS) "\
-       $script_dir/../vdp_lite_user_proj/vdp_lite_user_proj.lef"
+       $script_dir/../../lef/vdp_lite_user_proj.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-       $script_dir/../vdp_lite_user_proj/vdp_lite_user_proj.gds"
+       $script_dir/../../gds/vdp_lite_user_proj.gds"
 
 # Extra options:
 

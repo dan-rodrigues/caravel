@@ -37,6 +37,8 @@ set ::env(DIODE_INSERTION_STRATEGY) 0
 
 # Extra options:
 
+set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
+
 set ::env(ROUTING_CORES) 6
 
 # set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10

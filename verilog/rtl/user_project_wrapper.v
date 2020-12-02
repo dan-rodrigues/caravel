@@ -19,14 +19,14 @@ module user_project_wrapper #(
     parameter BITS = 32
 )(
 `ifdef USE_POWER_PINS
-    inout vdda1,	// User area 1 3.3V supply
-    inout vdda2,	// User area 2 3.3V supply
-    inout vssa1,	// User area 1 analog ground
-    inout vssa2,	// User area 2 analog ground
-    inout vccd1,	// User area 1 1.8V supply
-    inout vccd2,	// User area 2 1.8v supply
-    inout vssd1,	// User area 1 digital ground
-    inout vssd2,	// User area 2 digital ground
+    inout vdda1,    // User area 1 3.3V supply
+    inout vdda2,    // User area 2 3.3V supply
+    inout vssa1,    // User area 1 analog ground
+    inout vssa2,    // User area 2 analog ground
+    inout vccd1,    // User area 1 1.8V supply
+    inout vccd2,    // User area 2 1.8v supply
+    inout vssd1,    // User area 1 digital ground
+    inout vssd2,    // User area 2 digital ground
 `endif
 
     // Wishbone Slave ports (WB MI A)
@@ -66,48 +66,52 @@ module user_project_wrapper #(
     /*--------------------------------------*/
 
     vdp_lite_user_proj mprj (
-    `ifdef USE_POWER_PINS
-	.vdda1(vdda1),	// User area 1 3.3V power
-	.vdda2(vdda2),	// User area 2 3.3V power
-	.vssa1(vssa1),	// User area 1 analog ground
-	.vssa2(vssa2),	// User area 2 analog ground
-	.vccd1(vccd1),	// User area 1 1.8V power
-	.vccd2(vccd2),	// User area 2 1.8V power
-	.vssd1(vssd1),	// User area 1 digital ground
-	.vssd2(vssd2),	// User area 2 digital ground
-    `endif
+`ifdef USE_POWER_PINS
+    .vdda1(vdda1),  // User area 1 3.3V power
+    .vdda2(vdda2),  // User area 2 3.3V power
+    .vssa1(vssa1),  // User area 1 analog ground
+    .vssa2(vssa2),  // User area 2 analog ground
+    .vccd1(vccd1),  // User area 1 1.8V power
+    .vccd2(vccd2),  // User area 2 1.8V power
+    .vssd1(vssd1),  // User area 1 digital ground
+    .vssd2(vssd2),  // User area 2 digital ground
+`endif
 
-    .VPWR(1),
-    .VGND(0),
+    // This is just a convenience for sim to "power" the sky130 models
+    // It's expected that the common PDN config in openlane will configure for synth
+`ifdef FUNCTIONAL
+    .VPWR(1'b0),
+    .VGND(1'b0),
+`endif
     
-	// MGMT core clock and reset
+    // MGMT core clock and reset
 
-    	.wb_clk_i(wb_clk_i),
-    	.wb_rst_i(wb_rst_i),
+    .wb_clk_i(wb_clk_i),
+    .wb_rst_i(wb_rst_i),
 
-	// MGMT SoC Wishbone Slave
+    // MGMT SoC Wishbone Slave
 
-	.wbs_cyc_i(wbs_cyc_i),
-	.wbs_stb_i(wbs_stb_i),
-	.wbs_we_i(wbs_we_i),
-	.wbs_sel_i(wbs_sel_i),
-	.wbs_adr_i(wbs_adr_i),
-	.wbs_dat_i(wbs_dat_i),
-	.wbs_ack_o(wbs_ack_o),
-	.wbs_dat_o(wbs_dat_o),
+    .wbs_cyc_i(wbs_cyc_i),
+    .wbs_stb_i(wbs_stb_i),
+    .wbs_we_i(wbs_we_i),
+    .wbs_sel_i(wbs_sel_i),
+    .wbs_adr_i(wbs_adr_i),
+    .wbs_dat_i(wbs_dat_i),
+    .wbs_ack_o(wbs_ack_o),
+    .wbs_dat_o(wbs_dat_o),
 
-	// Logic Analyzer
+    // Logic Analyzer
 
-	.la_data_in(la_data_in),
-	.la_data_out(la_data_out),
-	.la_oen (la_oen),
+    .la_data_in(la_data_in),
+    .la_data_out(la_data_out),
+    .la_oen (la_oen),
 
-	// IO Pads
+    // IO Pads
 
-	.io_in (io_in),
-    	.io_out(io_out),
-    	.io_oeb(io_oeb)
+    .io_in (io_in),
+        .io_out(io_out),
+        .io_oeb(io_oeb)
     );
 
-endmodule	// user_project_wrapper
+endmodule   // user_project_wrapper
 `default_nettype wire

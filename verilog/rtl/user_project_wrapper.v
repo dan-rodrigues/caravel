@@ -77,6 +77,9 @@ module user_project_wrapper #(
 	.vssd2(vssd2),	// User area 2 digital ground
     `endif
 
+    .VPWR(1),
+    .VGND(0),
+    
 	// MGMT core clock and reset
 
     	.wb_clk_i(wb_clk_i),

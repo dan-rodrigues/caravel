@@ -308,9 +308,6 @@ module vdp_sprite_core #(
     wire sprite_width_select = y_block_data_out[11];
 
     assign hit_list_data_in[14:13] = 0;
-    
-    // FIXME: if sprite limiting, this needs to terminate early
-    // or else it'll repeatedly reat y_block sprites beyond the end
 
     vdp_sprite_raster_collision #(
         .SPRITES_TOTAL(SPRITES_TOTAL)

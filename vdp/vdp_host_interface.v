@@ -50,13 +50,13 @@ module vdp_host_interface(
     end
 
     always @(posedge clk) begin
-	if (reset) begin
-		ready <= 1'b0;
-	end else begin
-        	// Reads use the registered input as a 1 cycle delay is required before output valid
-        	// Writes only need to be delayed if a subsequent write risks clobbering VRAM
-        	ready <= (host_write_en_gated || host_read_en_r);
-	end
+        if (reset) begin
+            ready <= 0;
+        end else begin
+            // Reads use the registered input as a 1 cycle delay is required before output valid
+            // Writes only need to be delayed if a subsequent write risks clobbering VRAM
+            ready <= (host_write_en_gated || host_read_en_r);
+    	end
     end
 
     always @(posedge clk) begin

@@ -163,9 +163,9 @@ module vdp #(
         .host_write_en(host_write_en),
         .register_write_en(register_write_en),
 
-        .cop_write_address(),
+        .cop_write_address(5'b0),
         .cop_write_data(16'b0),
-        .cop_write_en(1'b0), // !!!
+        .cop_write_en(1'b0),
 
         .host_address(host_address[5:0]),
         .host_write_data(host_write_data),

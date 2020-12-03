@@ -10,12 +10,43 @@ It is a minimized variant of the VDP found in the [icestation-32](https://github
 
 The font included in the character ROM is the [Good Neighbours pixel font](https://opengameart.org/content/good-neighbors-pixel-font) by Clint Bellanger, which is public domain.
 
+## Building
+
+### User project GDS
+
+```
+cd openlane
+make vdp_lite_user_proj
+```
+
+The /openlane directory contains  a symlink to a `$readmemh` file to be treated as ROM. Attempting to build it a different way or with a different CWD may fail.
+
+The resulting `vdp_lite_user_proj.gds` and `vdp_lite_user_proj.lef` should be moved to the project `/gds` and `/lef` directories respectively, to be consistent with how others in caravel are handled.
+
+Then to build the user project wrapper:
+
+```
+cd openlane
+make user_project_wrapper
+```
+
+The resulting GDS / LEF can then be integrated into Caravel
+
+## Tools used
+
+For the included build artefacts in this repo, these tools and their respective commits were used:
+
+* open_pdks: `8688323e12530b9ced04b8053a6c4699b28402fc`
+* openlane: `817314be3c7996f62b6cb499e35e2107d4b822e2`
+
 ## Tests
 
 Testbenches that instantiate the `caravel` SoC running tests software.
 
 * `video_frame`: Outputs a complete video frame using dumped RGBHV outputs, which is then converted using a Python script to a PNG.
 * `gamepad`: Exercises the gamepad serial IO and (tentative) LED outputs.
+
+## (TODO: GL tests and proper Makefile support)
 
 A sample PNG from the `video_frame` is shown below. It takes a very long time to complete and can be manually cut short to show a partial frame. The black borders represent the front/backporches.
 

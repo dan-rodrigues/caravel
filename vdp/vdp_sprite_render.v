@@ -197,9 +197,9 @@ module vdp_sprite_render(
 
             vram_fetcher_ready <= 1;
 
-            `debug(vram_load_counter <= 0;)
-            `debug(vram_read_address <= 0;)
-            `debug(fetching_second_row <= 0;)
+            vram_load_counter <= 0;
+            vram_read_address <= 0;
+            fetching_second_row <= 0;
         end else begin
             sprite_finished <= 0;
             sprite_row_is_valid <= 0;

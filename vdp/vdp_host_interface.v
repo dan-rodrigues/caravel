@@ -78,7 +78,10 @@ module vdp_host_interface(
     end
 
     always @(posedge clk) begin
-        if (host_write_en) begin
+        if (reset) begin
+            register_write_address <= 0;
+            register_write_data <= 0;
+        end else if (host_write_en) begin
             register_write_address <= host_address;
             register_write_data <= host_write_data;
         end else begin

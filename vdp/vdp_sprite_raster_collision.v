@@ -134,18 +134,28 @@ module vdp_sprite_raster_collision #(
     end
 
     always @(posedge clk) begin
-        // register inputs from y_block
-        sprite_y_r <= sprite_y;
-        sprite_height_r <= sprite_height;
+        if (restart) begin
+            has_collision_t <= 0;
+            has_collision <= 0;
+            width_select_out <= 0;
+            sprite_y_intersect <= 0;
+            sprite_y_r <= 0;
+            sprite_y_intersect_t <= 0;
+            sprite_height_r <= 0;
+        end else begin
+            // register inputs from y_block
+            sprite_y_r <= sprite_y;
+            sprite_height_r <= sprite_height;
 
-        // register comparator result from previously read y_block
-        sprite_y_intersect_t <= sprite_y_intersect_nx;
-        has_collision_t <= has_collision_nx;
+            // register comparator result from previously read y_block
+            sprite_y_intersect_t <= sprite_y_intersect_nx;
+            has_collision_t <= has_collision_nx;
 
-        // move the above registered result to the output for this module
-        sprite_y_intersect <= flip_y_d ? sprite_height_d - sprite_y_intersect_t - 1 : sprite_y_intersect_t;
-        has_collision <= has_collision_t;
-        width_select_out <= width_select_d;
+            // move the above registered result to the output for this module
+            sprite_y_intersect <= flip_y_d ? sprite_height_d - sprite_y_intersect_t - 1 : sprite_y_intersect_t;
+            has_collision <= has_collision_t;
+            width_select_out <= width_select_d;
+        end
     end
 
 `ifdef FORMAL

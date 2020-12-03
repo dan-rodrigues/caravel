@@ -139,7 +139,6 @@ module vdp_vga_timing #(
 
     always @(posedge clk) begin
         if (reset) begin
-            line_ended <= 0;
             hsync <= 1;
             vsync <= 1;
             active_display <= 0;

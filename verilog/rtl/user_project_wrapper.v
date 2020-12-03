@@ -79,7 +79,7 @@ module user_project_wrapper #(
 
     // This is just a convenience for sim to "power" the sky130 models
     // It's expected that the common PDN config in openlane will configure for synth
-`ifdef FUNCTIONAL
+`ifdef GL_SIM
     .VPWR(1'b1),
     .VGND(1'b0),
 `endif

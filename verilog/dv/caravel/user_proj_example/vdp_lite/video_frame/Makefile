@@ -2,7 +2,7 @@ PROJ := video_frame
 
 TB_SW_SOURCES += main.c
 
-WRITE_VCD := 1
+WRITE_VCD := 0
 
 include ../core.mk
 

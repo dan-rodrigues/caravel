@@ -6,8 +6,8 @@
 
 // From Caravel:
 
-#include "../../../defs.h"
-#include "../../../stub.c"
+#include "../../caravel/defs.h"
+#include "../../caravel/stub.c"
 
 // User proj additions:
 

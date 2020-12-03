@@ -8,7 +8,7 @@
 
 // From Caravel:
 
-#include "../../../defs.h"
+#include "../../caravel/defs.h"
 
 // New additions:
 

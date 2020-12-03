@@ -19,9 +19,11 @@ cd openlane
 make vdp_lite_user_proj
 ```
 
-The /openlane directory contains  a symlink to a `$readmemh` file to be treated as ROM. Attempting to build it a different way or with a different CWD may fail.
+The `/openlane` directory contains  a symlink to a `$readmemh` file to be treated as ROM. Attempting to build it a different way or with a different CWD may fail.
 
 The resulting `vdp_lite_user_proj.gds` and `vdp_lite_user_proj.lef` should be moved to the project `/gds` and `/lef` directories respectively, to be consistent with how others in caravel are handled.
+
+### User project wrapper
 
 Then to build the user project wrapper:
 
@@ -41,12 +43,10 @@ For the included build artefacts in this repo, these tools and their respective 
 
 ## Tests
 
-Testbenches that instantiate the `caravel` SoC running tests software.
+Testbenches that instantiate the `caravel` SoC running tests software. They can be found in the `verilog/dv/vdp_lite` directory. 
 
 * `video_frame`: Outputs a complete video frame using dumped RGBHV outputs, which is then converted using a Python script to a PNG.
 * `gamepad`: Exercises the gamepad serial IO and (tentative) LED outputs.
-
-## (TODO: GL tests and proper Makefile support)
 
 A sample PNG from the `video_frame` is shown below. It takes a very long time to complete and can be manually cut short to show a partial frame. The black borders represent the front/backporches.
 

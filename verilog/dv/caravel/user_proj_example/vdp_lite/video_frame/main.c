@@ -25,8 +25,9 @@
 // Adjusted defines with minimized VDP:
 
 #define SPRITES_TOTAL 31
+#define SPRITES_INDEX_TOTAL 32
 
-static uint16_t sprite_buffer[SPRITES_TOTAL * 3];
+static uint16_t sprite_buffer[SPRITES_INDEX_TOTAL * 3];
 static uint16_t *sprite_buffer_pointer;
 
 #define LITE_ACTIVE_WIDTH 256
@@ -228,7 +229,7 @@ static void sprite_init() {
     
     // Move all sprites offscreen
     vdp_seek_sprite(0);
-    for (uint32_t i = 0; i < SPRITES_TOTAL; i++) {
+    for (uint32_t i = 0; i < SPRITES_INDEX_TOTAL; i++) {
         vdp_write_sprite_meta(0, LITE_ACTIVE_HEIGHT, 0);
         
         sprite_buffer[i * 3 + 0] = 0;

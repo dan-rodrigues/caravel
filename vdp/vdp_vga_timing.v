@@ -138,7 +138,16 @@ module vdp_vga_timing #(
     end
 
     always @(posedge clk) begin
-        if (!hold_raster) begin
+        if (reset) begin
+            line_ended <= 0;
+            hsync <= 1;
+            vsync <= 1;
+            active_display <= 0;
+            line_ended <= 0;
+            frame_ended <= 0;
+            active_line_started <= 0;
+            active_frame_ended <= 0;
+        end else if (!hold_raster) begin
             hsync <= !hsync_b_nx;
             vsync <= !vsync_b_nx;
             active_display <= active_display_nx;

@@ -34,7 +34,7 @@ BEHAVIOURAL_MODELS = $(MK_DIR)../caravel
 # Verilog:
 
 VDP_USER_PROJ_DIR := $(MK_DIR)../../rtl/vdp_lite_user_proj/
-VDP_SOURCES_DIR := $(MK_DIR)../../../vdp/
+VDP_SOURCES_DIR := $(VDP_USER_PROJ_DIR)
 
 VDP_GL_USER_PROJ := $(MK_DIR)../../gl/vdp_lite_user_proj.v
 

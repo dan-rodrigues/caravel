@@ -37,7 +37,7 @@ pdngen::specify_grid macro {
     connect {}
 }
 
-set ::halo 10
+set ::halo 0
 
 # POWER or GROUND #Std. cell rails starting with power or ground rails at the bottom of the core area
 set ::rails_start_with "POWER" ;

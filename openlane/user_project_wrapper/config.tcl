@@ -29,6 +29,9 @@ set ::env(DIODE_INSERTION_STRATEGY) 0
 set ::env(MAGIC_ZEROIZE_ORIGIN) 0
 set ::env(MAGIC_WRITE_FULL_LEF) 1
 
+set ::env(GLB_RT_MINLAYER) 2
+set ::env(GLB_RT_MAXLAYER) 4
+
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \
 	$script_dir/../../verilog/rtl/user_project_wrapper.v"

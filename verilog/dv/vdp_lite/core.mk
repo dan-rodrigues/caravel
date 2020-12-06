@@ -83,6 +83,10 @@ ALL_RTL_DEPS := \
 	$(VDP_USER_PROJ) \
 	$(VDP_SELECTED_USER_PROJ_SOURCES)
 
+# Common defines:
+
+IVERILOG_PARAMS := -DSIM
+
 ###
 
 # C:

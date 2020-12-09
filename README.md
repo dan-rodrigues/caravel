@@ -38,8 +38,14 @@ The resulting GDS / LEF can then be integrated into Caravel
 
 For the included build artefacts in this repo, these tools and their respective commits were used:
 
+### `vdp_lite_user_proj`
+
 * open_pdks: `8688323e12530b9ced04b8053a6c4699b28402fc`
 * openlane: `817314be3c7996f62b6cb499e35e2107d4b822e2`
+
+### `user_project_wrapper`
+
+`mpw-one-a` tagged openlane and open_pdks were used.
 
 ## Tests
 

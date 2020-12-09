@@ -47,7 +47,6 @@ proc run_flow {args} {
 	run_placement
 	run_cts
 	insert_diode
-	gen_pdn
 	run_routing
 
 	if { $::env(DIODE_INSERTION_STRATEGY) == 2 } {

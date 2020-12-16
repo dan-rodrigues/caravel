@@ -32,11 +32,9 @@ set ::env(FP_IO_HLENGTH) $::unit
 set ::env(FP_IO_VTHICKNESS_MULT) 4
 set ::env(FP_IO_HTHICKNESS_MULT) 4
 
-
-set ::env(CLOCK_PORT) "user_clock2"
 set ::env(CLOCK_NET) "mprj.clk"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "39"
 
 set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
 set ::env(DIODE_INSERTION_STRATEGY) 0
@@ -51,11 +49,18 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/user_project_wrapper.v"
 
 set ::env(VERILOG_FILES_BLACKBOX) "\
-	$script_dir/../../verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/user_proj_example.v"
+       $script_dir/../../verilog/rtl/defines.v \
+       $script_dir/../../verilog/rtl/vdp_lite_user_proj/vdp_lite_user_proj.v"
+
+set ::env(VERILOG_INCLUDE_DIRS) "$script_dir/../../vdp/"
 
 set ::env(EXTRA_LEFS) "\
-	$script_dir/../../lef/user_proj_example.lef"
+       $script_dir/../../lef/vdp_lite_user_proj.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$script_dir/../../gds/user_proj_example.gds"
+       $script_dir/../../gds/vdp_lite_user_proj.gds"
+
+# Extra options:
+
+set ::env(ROUTING_CORES) 6
+

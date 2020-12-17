@@ -24,7 +24,7 @@ global_routing_or
 detailed_routing
 
 # Required to get the .powered.lvs.v:
-write_powered_verilog -power vccd1 -ground vssd1
+write_powered_verilog
 set_netlist $::env(lvs_result_file_tag).powered.v
 
 run_magic

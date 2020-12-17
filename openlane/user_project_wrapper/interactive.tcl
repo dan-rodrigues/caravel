@@ -23,6 +23,10 @@ set_def $::env(pdn_tmp_file_tag).def
 global_routing_or
 detailed_routing
 
+# Required to get the .powered.lvs.v:
+write_powered_verilog -power vccd1 -ground vssd1
+set_netlist $::env(lvs_result_file_tag).powered.v
+
 run_magic
 run_magic_spice_export
 
@@ -30,6 +34,7 @@ save_views       -lef_path $::env(magic_result_file_tag).lef \
                  -def_path $::env(tritonRoute_result_file_tag).def \
                  -gds_path $::env(magic_result_file_tag).gds \
                  -mag_path $::env(magic_result_file_tag).mag \
+		 -verilog_path $::env(CURRENT_NETLIST) \
                  -save_path $save_path \
                  -tag $::env(RUN_TAG)
 

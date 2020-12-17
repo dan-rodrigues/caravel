@@ -28,6 +28,27 @@ pdngen::specify_grid macro {
     connect {}
 }
 
+# See Slack PDN chat:
+if { $::env(CONNECT_GRIDS) } {
+	pdngen::specify_grid macro {
+	    power_pins "VPWR"
+	    ground_pins "VGND"
+	    blockages "met4"
+	    straps { 
+	    } 
+	    connect {{met4_PIN_ver met5}}
+	}
+} else {
+	pdngen::specify_grid macro {
+	    power_pins "VPWR"
+	    ground_pins "VGND"
+	    blockages "met4"
+	    straps { 
+	    } 
+	    connect {}
+	}
+}
+
 pdngen::specify_grid macro {
     power_pins $::env(_VDD_NET_NAME)
     ground_pins $::env(_GND_NET_NAME)

@@ -1,6 +1,7 @@
 read_lef $::env(MERGED_LEF_UNPADDED)
 read_def $::env(CURRENT_DEF)
 
+# Should be 1.6?
 set ::env(_SPACING) 1.7
 set ::env(_WIDTH) 3
 
@@ -8,12 +9,16 @@ set power_domains [list {vccd1 vssd1} {vccd2 vssd2} {vdda1 vssa1} {vdda2 vssa2}]
 
 set ::env(_VDD_NET_NAME) vccd1
 set ::env(_GND_NET_NAME) vssd1
+
 set ::env(_V_OFFSET) 14
 set ::env(_H_OFFSET) $::env(_V_OFFSET)
 set ::env(_V_PITCH) 180
 set ::env(_H_PITCH) 180
 set ::env(_V_PDN_OFFSET) 0
 set ::env(_H_PDN_OFFSET) 0
+
+# From Slack PDN chat:
+set ::env(CONNECT_GRIDS) 1
 
 foreach domain $power_domains {
 	set ::env(_VDD_NET_NAME) [lindex $domain 0]

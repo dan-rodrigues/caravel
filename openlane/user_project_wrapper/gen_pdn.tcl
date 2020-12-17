@@ -26,6 +26,8 @@ foreach domain $power_domains {
 
 	pdngen $::env(PDN_CFG) -verbose
 
+	set ::env(CONNECT_GRIDS) 0
+
 	set ::env(_V_OFFSET) \
 		[expr $::env(_V_OFFSET) + 2*($::env(_WIDTH)+$::env(_SPACING))]
 	set ::env(_H_OFFSET) \

@@ -10,10 +10,6 @@ init_floorplan
 
 place_io_ol
 
-set ::env(FP_DEF_TEMPATE) $script_dir/../../def/user_project_wrapper_empty.def
-
-apply_def_template
-
 add_macro_placement mprj 800 800 N
 
 manual_macro_placement f
@@ -21,6 +17,7 @@ exec -ignorestderr openroad -exit $script_dir/gen_pdn.tcl
 set_def $::env(pdn_tmp_file_tag).def
 
 global_routing_or
+add_route_obs
 detailed_routing
 
 # Required to get the .powered.lvs.v:

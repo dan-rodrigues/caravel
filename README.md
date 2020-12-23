@@ -62,18 +62,17 @@ The resulting GDS / LEF can then be integrated into Caravel
 
 Testbenches that instantiate the `caravel` SoC running tests software. They can be found in the `verilog/dv/vdp_lite` directory. 
 
+There is a `GL_SIM` variable in core.mk that can enable the `gl/` verilog (on by default).
+
 * `video_frame`: Outputs a complete video frame using dumped RGBHV outputs, which is then converted using a Python script to a PNG.
 * `gamepad`: Exercises the gamepad serial IO and (tentative) LED outputs.
 
 A sample PNG from the `video_frame` is shown below. It takes a very long time to complete and can be manually cut short to show a partial frame. The black borders represent the front/backporches.
 
-![](verilog/dv/caravel/user_proj_example/vdp_lite/video_frame/screen_progress/complete.png)
+![](verilog/dv/vdp_lite/video_frame/screen_progress/gl_sim_output.png)
 
 ## TODO
 
-* Configured config.tcl files appropriately for DRC clean design.
-* SPDX license headers.
-* Extract this README.md section.
 * Extract project-specific contents to separate repo.
 
 The original contents of the README file follow:
